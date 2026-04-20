@@ -2035,3 +2035,24 @@ section{
     font-size: 16px;
     font-weight: 500;
 }
+
+/* --- Contact Us Section --- */
+
+.faq-section {
+    position: relative;
+    overflow-x: hidden;
+}
+
+.faq-section .title .float-txt {
+    position: absolute;
+    top: 18px;
+    right: 123px;
+    -webkit-transform: translateX(33%);
+    transform: translateX(33%);
+    line-height: 0.7;
+    font-size: 220px;
+    color: #f6f6f6;
+    font-weight: bold;
+    text-transform: uppercase;
+    pointer-events: none;
+}

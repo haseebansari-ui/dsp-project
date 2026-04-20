@@ -67,6 +67,17 @@
 .cotact-info p{
   padding-top: 2rem;
 }
+.faq-section .title .float-txt{
+  top: -73px;
+  right: 471px;
+  font-size: 121px;
+}
+.faq-section .title.mb-5{
+  margin-bottom: 2rem !important;
+}
+.faq-section .inner-content-about .inner-content-papra{
+  margin-top: 10px;
+}
 }
 
 @media screen and (max-width: 767px){
@@ -218,11 +229,14 @@
     top: -69px;
     font-size: 115px;
   }
-.contact-sec.contact-sec .title .float-txt {
-        top: -61px;
-        right: 206px;
-        font-size: 95px;
+  .contact-sec.contact-sec .title .float-txt {
+    top: -61px;
+    right: 206px;
+    font-size: 95px;
     }
+  .faq-section .title .float-txt{
+    right: 295px;
+  }
 }
 
 @media screen and (max-width: 576px){
@@ -278,6 +292,12 @@
     right: 162px;
     font-size: 91px;
   }
+  .faq-section .title .float-txt{
+    right: 295px;
+  }
+  .faq-section .title .float-txt {
+    right: 235px;
+  }
 }
 
 @media screen and (max-width: 479px){
@@ -322,6 +342,9 @@
     .contact-sec.contact-sec .title .float-txt {
       right: 126px;
       font-size: 72px;
+    }
+    .faq-section .title .float-txt {
+        right: 135px;
     }
 }
 
