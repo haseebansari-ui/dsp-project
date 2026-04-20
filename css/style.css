@@ -38,6 +38,11 @@ li {
 	list-style: none;
 }
 
+.play-btn{
+    width: 160px;
+    display: none;
+}
+
 /* ---- Reusable Code ---- */
 
 .wrapper {
@@ -50,7 +55,7 @@ li {
 }
 
 .sec-padding {
-	padding: 5rem 0;
+	padding: 3rem 0;
 }
 .pt-pb{
 	padding: 8rem 0;
@@ -1906,6 +1911,10 @@ header {
     transform: translateX(0);
     opacity: 1;
     visibility: visible;
+}
+
+.solution-sec .btn-play.butn {
+    padding: 10px 15px;
 }
 
 /* --- Platform Section --- */

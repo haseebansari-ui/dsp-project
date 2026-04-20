@@ -17,6 +17,10 @@
   .main-header img{
     width: 90px;
   }
+  .play-btn{
+    display: block;
+    width: 32%;
+}
 
 }
 
@@ -118,6 +122,24 @@
   .hero-banner h1{
     margin: 70px 0 100px;
   }
+  /* .blog-sec .title-wrapper .row{
+    flex-direction: row-reverse;
+  } */
+
+  .solution-sec .title.mb-5{
+    margin-bottom: 2rem !important;
+  }
+  .inner-content-about .inner-content-papra{
+    margin-top: 32px;
+  }
+  .solution-sec .title .float-txt{
+    top: -60px;
+    right: 193px;
+    font-size: 93px;
+  }
+  .footer-sec .links-wrapper{
+    padding: 70px 0;
+  }
 }
 
 @media screen and (max-width: 576px){
@@ -141,6 +163,10 @@
   .hero-banner::after{
     background-size: 320px;
   }
+  .solution-sec .title .float-txt{
+    right: 162px;
+    font-size: 83px;
+  }
 
 }
 
@@ -152,6 +178,11 @@
       font-size: 30px;
     }
     .hero-banner::after {
-        background-size: 308px;
+      background-size: 308px;
+    }
+    .solution-sec .title .float-txt {
+      right: 134px;
+      font-size: 63px;
+      top: -50px;
     }
 }
