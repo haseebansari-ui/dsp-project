@@ -23,7 +23,7 @@
     display: block;
     width: 152px;
 }
-.inner-about-sec .title .float-txt {
+.solution-sec.inner-about-sec .title .float-txt {
     right: 277px;
     top: -69px;
     font-size: 115px;
@@ -36,6 +36,11 @@
 }
 .bout-inner-services-content-bx h6 br{
   display: none;
+}
+.about-sec.inner-about-sec .title .float-txt {
+    right: 440px;
+    top: -69px;
+    font-size: 115px;
 }
 }
 
@@ -165,7 +170,7 @@
   .about-sec .title{
     padding-top: 50px;
   }
-  .inner-about-sec .title .float-txt {
+  .solution-sec.inner-about-sec .title .float-txt {
     right: 216px;
     top: -52px;
     font-size: 83px;
@@ -178,6 +183,11 @@
     top: -36px;
     right: -6px;
   }
+  .about-sec.inner-about-sec .title .float-txt {
+    right: 264px;
+    top: -25px;
+    font-size: 112px;
+}
 }
 
 @media screen and (max-width: 576px){
@@ -209,16 +219,21 @@
     width: 35%;
   } */
 
-  .inner-about-sec .title .float-txt {
+  .solution-sec.inner-about-sec .title .float-txt {
     right: 202px;
   }
-  .inner-about-sec .title .float-txt {
+  .solution-sec.inner-about-sec .title .float-txt {
     right: 158px;
   }
   .client-logo-shap {
     top: -36px;
     right: -6px;
   }
+  .about-sec.inner-about-sec .title .float-txt {
+        right: 207px;
+        top: -25px;
+        font-size: 112px;
+    }
 
 }
 
@@ -237,7 +252,7 @@
       font-size: 63px;
       top: -50px;
     }
-    .inner-about-sec .title .float-txt {
+    .solution-sec.inner-about-sec .title .float-txt {
         right: 140px;
         top: -39px;
         font-size: 60px;
@@ -250,4 +265,10 @@
       top: -118px;
       right: -6px;
     }
+    .about-sec.inner-about-sec .title .float-txt {
+      right: 127px;
+      top: -20px;
+      font-size: 103px;
+    }
 }
+
