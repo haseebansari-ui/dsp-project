@@ -13,7 +13,9 @@
   .about-pg-rotate-box{
     display: none;
   }
-
+.rotate-box{
+    display: none;
+}
   .main-header img{
     width: 90px;
   }
