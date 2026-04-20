@@ -42,6 +42,31 @@
     top: -69px;
     font-size: 115px;
 }
+.blog-section.inner-about-sec .title .float-txt {
+    right: 455px;
+    top: -69px;
+    font-size: 115px;
+}
+.blog-section .title.mb-5{
+      margin-bottom: 2rem !important;
+}
+.blog-section.inner-content-about .inner-content-papra{
+  margin-top: 10px;
+}
+.contact-sec .inner-about-pg-hero h2 br{
+  display: none;
+}
+.contact-sec .inner-about-pg-hero h2 {
+    font-size: 87px !important;
+}
+.contact-sec.contact-sec .title .float-txt{
+  top: -61px;
+  right: 336px;
+  font-size: 111px;
+}
+.cotact-info p{
+  padding-top: 2rem;
+}
 }
 
 @media screen and (max-width: 767px){
@@ -188,6 +213,16 @@
     top: -25px;
     font-size: 112px;
 }
+  .blog-section.inner-about-sec .title .float-txt {
+    right: 274px;
+    top: -69px;
+    font-size: 115px;
+  }
+.contact-sec.contact-sec .title .float-txt {
+        top: -61px;
+        right: 206px;
+        font-size: 95px;
+    }
 }
 
 @media screen and (max-width: 576px){
@@ -234,7 +269,15 @@
         top: -25px;
         font-size: 112px;
     }
-
+.blog-section.inner-about-sec .title .float-txt {
+    right: 216px;
+    top: -69px;
+    font-size: 115px;
+  }
+  .contact-sec.contact-sec .title .float-txt {
+    right: 162px;
+    font-size: 91px;
+  }
 }
 
 @media screen and (max-width: 479px){
@@ -270,13 +313,17 @@
       top: -20px;
       font-size: 103px;
     }
-}
-
-@media screen and (max-width: 479px){
-  .about-sec.inner-about-sec .title .float-txt {
-      right: 99px;
-      top: -14px;
-      font-size: 85px;
+    .blog-section.inner-about-sec .title .float-txt {
+      right: 122px;  
+    }
+        .contact-sec .inner-about-pg-hero h2 {
+        font-size: 67px !important;
+    }
+    .contact-sec.contact-sec .title .float-txt {
+      right: 126px;
+      font-size: 72px;
     }
 }
+
+
 
