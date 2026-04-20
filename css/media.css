@@ -272,3 +272,11 @@
     }
 }
 
+@media screen and (max-width: 479px){
+  .about-sec.inner-about-sec .title .float-txt {
+      right: 99px;
+      top: -14px;
+      font-size: 85px;
+    }
+}
+
