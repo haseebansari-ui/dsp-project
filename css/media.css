@@ -170,7 +170,14 @@
     top: -25px;
     font-size: 115px;
   }
-
+  .client-logo-shap{
+    top: -27px;
+    right: 5px;
+  }
+  .client-logo-shap {
+    top: -36px;
+    right: -6px;
+  }
 }
 
 @media screen and (max-width: 576px){
@@ -207,7 +214,11 @@
   }
   .inner-about-sec .title .float-txt {
     right: 194px;
-    }
+  }
+  .client-logo-shap {
+    top: -36px;
+    right: -6px;
+  }
 
 }
 
@@ -233,6 +244,11 @@
     }
     .play-btn {
         width: 40%;
+    }
+
+    .client-logo-shap {
+      top: -118px;
+      right: -6px;
     }
 }
 
