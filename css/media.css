@@ -205,6 +205,9 @@
   .inner-about-sec .title .float-txt {
     right: 202px;
   }
+  .inner-about-sec .title .float-txt {
+    right: 194px;
+    }
 
 }
 
@@ -229,6 +232,12 @@
         font-size: 104px;
     }
     .play-btn {
-        width: 46%;
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 379px){
+  .play-btn {
+        width: 63%;
     }
 }
