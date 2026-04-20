@@ -661,7 +661,7 @@ header {
 
 .about-sec{
 	position: relative;
-	overflow-x: hidden;
+	overflow: hidden;
 }
 .about-sec .title .btns {
     position: relative;
