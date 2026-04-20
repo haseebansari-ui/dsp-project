@@ -21,10 +21,10 @@
   }
   .play-btn{
     display: block;
-    width: 32%;
+    width: 152px;
 }
 .inner-about-sec .title .float-txt {
-    right: 441px;
+    right: 277px;
     top: -69px;
     font-size: 115px;
 }
@@ -166,9 +166,9 @@
     padding-top: 50px;
   }
   .inner-about-sec .title .float-txt {
-    right: 268px;
-    top: -25px;
-    font-size: 115px;
+    right: 216px;
+    top: -52px;
+    font-size: 83px;
   }
   .client-logo-shap{
     top: -27px;
@@ -205,15 +205,15 @@
     right: 162px;
     font-size: 83px;
   }
-  .play-btn{
+  /* .play-btn{
     width: 35%;
-  }
+  } */
 
   .inner-about-sec .title .float-txt {
     right: 202px;
   }
   .inner-about-sec .title .float-txt {
-    right: 194px;
+    right: 158px;
   }
   .client-logo-shap {
     top: -36px;
@@ -238,22 +238,16 @@
       top: -50px;
     }
     .inner-about-sec .title .float-txt {
-        right: 125px;
-        top: -20px;
-        font-size: 104px;
+        right: 140px;
+        top: -39px;
+        font-size: 60px;
     }
-    .play-btn {
+    /* .play-btn {
         width: 40%;
-    }
+    } */
 
     .client-logo-shap {
       top: -118px;
       right: -6px;
-    }
-}
-
-@media screen and (max-width: 379px){
-  .play-btn {
-        width: 63%;
     }
 }
