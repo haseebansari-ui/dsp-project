@@ -14,6 +14,9 @@
     display: none;
   }
 
+  .main-header img{
+    width: 90px;
+  }
 
 }
 
@@ -39,7 +42,7 @@
   }
   .hero-banner::after{
     background-position: top center;
-    background-size: 363px;
+    background-size: 340px;
     height: 100vh;
   }
   .hero-content .txt{
@@ -112,6 +115,9 @@
   .testimonial-sec .testi-card .rate-wrapper{
     flex-wrap: wrap;
   }
+  .hero-banner h1{
+    margin: 70px 0 100px;
+  }
 }
 
 @media screen and (max-width: 576px){
@@ -133,7 +139,19 @@
   }
 
   .hero-banner::after{
-    background-size: 340px;
+    background-size: 320px;
   }
 
+}
+
+@media screen and (max-width: 479px){
+    .hero-content h1 .item small {
+        font-size: 19px;
+    }
+    .hero-content .txt{
+      font-size: 30px;
+    }
+    .hero-banner::after {
+        background-size: 308px;
+    }
 }
