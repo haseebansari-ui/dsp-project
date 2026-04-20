@@ -13,6 +13,8 @@
   .about-pg-rotate-box{
     display: none;
   }
+
+
 }
 
 @media screen and (max-width: 767px){
@@ -29,10 +31,15 @@
   .side-menue-grid{
     grid-template-columns: repeat(1, 1fr);
   }
+  
   .head-services{display: none;}
+  .hero-banner{
+      overflow-y: hidden;
+      background-size: 973px;
+  }
   .hero-banner::after{
     background-position: top center;
-    background-size: 60%;
+    background-size: 363px;
     height: 100vh;
   }
   .hero-content .txt{
@@ -102,4 +109,31 @@
   .footer-sec .foot-links.mt-5{
     margin-top: 0.8rem !important;
   }
+  .testimonial-sec .testi-card .rate-wrapper{
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 576px){
+  .hero-content .txt{
+    font-size: 40px;
+  }
+  .hero-content small{
+    font-size: 17px;
+  }
+  .hero-banner .ltr1{
+    top: 97px;
+  }
+  .hero-banner .ltr2{
+    left: 9px
+  }
+  
+  .hero-content h1{
+    padding: 0 6px;
+  }
+
+  .hero-banner::after{
+    background-size: 340px;
+  }
+
 }
