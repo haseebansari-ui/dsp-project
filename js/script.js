@@ -1,21 +1,5 @@
 "use strict";
 
-// ====================
-// 	Desktop Menue Bar
-// ====================
-
-var menueBar = document.querySelector(".menue-bar");
-var sideMenu = document.querySelector('.side-manue');
-var sideMenuClose = document.querySelector('.side-menu-close')
-
-menueBar.addEventListener("click", ()=>{
-	sideMenu.classList.add("active");
-})
-
-sideMenuClose.addEventListener("click", ()=>{
-	sideMenu.classList.remove("active");
-})
-
 
 // ===============
 // 	Sliders
@@ -125,25 +109,46 @@ $(window).on("load", function () {
   AOS.refresh();
 });
 
+// ====================
+// 	Desktop Menue Bar
+// ====================
+
+const menueBar = document.querySelector(".menue-bar");
+const sideMenu = document.querySelector('.side-manue');
+const sideMenuClose = document.querySelector('.side-menu-close');
+
+if (menueBar && sideMenu) {
+  menueBar.addEventListener("click", () => {
+    sideMenu.classList.add("active");
+  });
+}
+
+if (sideMenuClose && sideMenu) {
+  sideMenuClose.addEventListener("click", () => {
+    sideMenu.classList.remove("active");
+  });
+}
+
+
 // ===============
 // 	Login Form
 // ===============
 
-var passwordShow = document.querySelector(".hide-password");
-var passwordInput = document.querySelector(".input-field-psw");
-var passwordHideEye = document.querySelector(".hide-eye");
-var passwordShowEye = document.querySelector(".show-eye");
+const passwordShow = document.querySelector(".hide-password");
+const passwordInput = document.querySelector(".input-field-psw");
+const passwordHideEye = document.querySelector(".hide-eye");
+const passwordShowEye = document.querySelector(".show-eye");
 
-passwordShow.addEventListener("click",()=>{
-  if(passwordInput.type === "password"){
+if (passwordShow && passwordInput) {
+  passwordShow.addEventListener("click", () => {
+    if (passwordInput.type === "password") {
       passwordInput.type = "text";
-       passwordShowEye.style.display = "block";
-       passwordHideEye.style.display = "none";
-    }
-    else{
+      if (passwordShowEye) passwordShowEye.style.display = "block";
+      if (passwordHideEye) passwordHideEye.style.display = "none";
+    } else {
       passwordInput.type = "password";
-      passwordHideEye.style.display = "block";
-      passwordShowEye.style.display = "none";
-            
-    }    
-})
+      if (passwordHideEye) passwordHideEye.style.display = "block";
+      if (passwordShowEye) passwordShowEye.style.display = "none";
+    }
+  });
+}
