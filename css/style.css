@@ -2119,3 +2119,40 @@ section{
 .signin-link{
     color: blue;
 }
+.password-bx{
+    position: relative;
+}
+.hide-password{
+    position: absolute;
+    top: 11px;
+    right: 3px;
+    height: 35px;
+    width: 38px;
+    /* background: aliceblue; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+/* 
+.hide-eye.active{
+    display: none;
+}
+.show-eye i{
+    display: none;
+}
+.show-eye i.active{
+    display: block;
+} */
+.open-eye{
+    display: none;
+}
+.open-eye.active{
+    display: block;
+}
+.close-eye{
+    font-size: 1rem;
+}
+.close-eye.active{
+    display: none;
+}
