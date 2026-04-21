@@ -129,7 +129,6 @@ if (sideMenuClose && sideMenu) {
   });
 }
 
-
 // ===============
 // 	Login Form
 // ===============
