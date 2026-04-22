@@ -150,48 +150,72 @@ if (passwordShow && passwordInput) {
   });
 }
 
-// =====================
-// 	Menu Bar Sub Menue
-// =====================
+// // =============================
+// // 	Menu Bar Sub Menue services
+// // =============================
 
-const mobileMenue = document.querySelectorAll('.mobile-menue-list-bx');
-const moblieSubMenue = document.querySelector(".mobile-menue-list");
-const plusIcon = document.querySelector(".plus-srvc");
-const minusIcon = document.querySelector(".minus-srvc")
+// const mobileMenue = document.querySelectorAll('.mobile-menue-list-bx');
+// const moblieSubMenue = document.querySelector(".mobile-menue-list");
+// const plusIcon = document.querySelector(".plus-srvc");
+// const minusIcon = document.querySelector(".minus-srvc")
 
-mobileMenue.forEach(item => {
-  item.addEventListener("click", () => {
-    if (moblieSubMenue.style.display === "none") {
-      moblieSubMenue.style.display = "block";
-      plusIcon.style.display = "none";
-      minusIcon.style.display = "block";
-    } else {
-      moblieSubMenue.style.display = "none";
-      plusIcon.style.display = "block";
-      minusIcon.style.display = "none";
-    }
-  });
-});
+// mobileMenue.forEach(item => {
+//   item.addEventListener("click", () => {
+//     if (moblieSubMenue.style.display === "none") {
+//       console.log("open");
+//       moblieSubMenue.style.display = "block";
+//       plusIcon.style.display = "none";
+//       minusIcon.style.display = "block";
+//     } else {
+//       console.log("close");
+//       moblieSubMenue.style.display = "none";
+//       plusIcon.style.display = "block";
+//       minusIcon.style.display = "none";
+//     }
+//   });
+// });
 
 // ==================================
 // 	Menu Bar Sub Menue bar resources
 // ==================================
 
-const resoucesMenue = document.querySelectorAll('.resources-sub-menue-list');
-const resourcesMoblieSubMenue = document.querySelector(".resources-sub-menue-points");
-const resourcesPlusIcon = document.querySelector(".resources-plus-srvc");
-const resourcesMinusIcon = document.querySelector(".resources-minus-srvc")
+// const resoucesMenue = document.querySelectorAll('.resources-sub-menue-list');
+// const resourcesMoblieSubMenue = document.querySelector(".resources-sub-menue-points");
+// const resourcesPlusIcon = document.querySelector(".resources-plus-srvc");
+// const resourcesMinusIcon = document.querySelector(".resources-minus-srvc")
 
-resoucesMenue.forEach(item => {
-  item.addEventListener("click", () => {
-    if (resourcesMoblieSubMenue.style.display === "none") {
-      resourcesMoblieSubMenue.style.display = "block";
-      resourcesPlusIcon.style.display = "none";
-      resourcesMinusIcon.style.display = "block";
-    } else {
-      resourcesMoblieSubMenue.style.display = "none";
-      resourcesPlusIcon.style.display = "block";
-      resourcesMinusIcon.style.display = "none";
-    }
-  });
+// resoucesMenue.forEach(item => {
+//   item.addEventListener("click", () => {
+//     if (resourcesMoblieSubMenue.style.display === "none") {
+//       resourcesMoblieSubMenue.style.display = "block";
+//       resourcesPlusIcon.style.display = "none";
+//       resourcesMinusIcon.style.display = "block";
+//     } else {
+//       resourcesMoblieSubMenue.style.display = "none";
+//       resourcesPlusIcon.style.display = "block";
+//       resourcesMinusIcon.style.display = "none";
+//     }
+//   });
+// });
+
+document.addEventListener("DOMContentLoaded", function() {
+    
+    const menuToggles = document.querySelectorAll('.srvc-content-bx, .resources-content-bx');
+    
+    menuToggles.forEach(toggle => {
+        toggle.addEventListener('click', function(e) {
+            
+            e.preventDefault();
+
+            this.classList.toggle('active');
+
+            const subMenu = this.nextElementSibling;
+
+            if (subMenu.style.display === "block") {
+                subMenu.style.display = "none";
+            } else {
+                subMenu.style.display = "block";
+            }
+        });
+    });
 });
