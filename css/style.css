@@ -2337,10 +2337,10 @@ section{
     font-size: 1rem;
 }
 
-
-.home-menue-bar ul li:hover .resources-content-bx{
-        color: var(--hover-color);
+.home-menue-bar li ul li::after {
+    display: none;
 }
-.home-menue-bar ul li:hover .resources-content-bx span{
+
+.resources-content-bx:hover{
         color: var(--hover-color);
 }
