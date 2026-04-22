@@ -2076,7 +2076,7 @@ section{
     height: 463px;
     width: 922px;
     border: 1px solid #9995;
-    margin: 85px auto;
+    margin: 45px auto;
     box-shadow: 0 0px 5px #c1bebe;
     border-radius: 0.8rem;
 }
@@ -2132,7 +2132,9 @@ section{
     text-align: center;
 }
 .signin-link{
-    color: blue;
+    color: var(--font-colour);
+    text-decoration: underline;
+    font-weight: 500;
 }
 .password-bx{
     position: relative;
@@ -2152,6 +2154,18 @@ section{
 .show-eye{
     display: none;
 }
+
+.back-btn{
+    padding: 1rem 2rem;
+    background: var(--font-colour);
+    color: #fff;
+    border-radius: 0.5rem;
+    margin: 1rem 0 0 6rem;
+}
+
+.login-form-sec .back-btn{
+    color: #fff;
+} 
 
 /* --- SignUp Form Section --- */
 
