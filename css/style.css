@@ -151,7 +151,7 @@ header {
 	position: absolute;
 	top: 6px;
 	left: -251px;
-	height: 163px;
+	/* height: 163px; */
 	width: 100%;
 	overflow: hidden;
 	box-shadow: 0 0 20px #0001;
@@ -175,11 +175,11 @@ header {
 
 .navbar-nav li ul li .industries-list {
 	top: 191px;
-	left: -268px;
+	left: -234px;
 }
 .navbar-nav li ul li .resources-list {
 	top: 229px;
-	left: -268px;
+	left: -234px;
 }
 
 .menue-bar {
@@ -2224,4 +2224,103 @@ section{
 .form-img p{
     color: #fff;
     font-size: 1.5rem;
+}
+
+/* --- Mobile Menue Section --- */
+
+.home-menue-bar ul li ul{
+    margin-left: 0;
+}
+
+.home-menue-bar li ul li{
+    padding: 0;
+}
+/* .home-menue-bar li ul{
+    display: none;
+}
+.home-menue-bar li:hover ul {
+    display: block;
+} */
+
+.home-menue-bar ul li ul li a{
+    font-size: 1.3rem;
+}
+
+.home-menue-bar li:hover ul li{
+    padding: 0;
+}
+.home-menue-bar li::after ul li{
+    width: 0;
+    left: 0;
+}
+
+.mobile-menue-list{
+    display: none;
+}
+.mobile-menue-list.active{
+    display: Block;
+}
+
+.minus-srvc{
+    display: none;
+}
+
+/* .home-menue-bar ul li a.servc-menue-title{
+    display: flex;
+    align-items: center;
+    gap:1rem;
+} */
+
+.home-menue-bar ul li ul li ul li a{
+    padding-left: 1rem;
+}
+
+.resources-sub-menue-points{
+    display: none;
+}
+.resources-sub-menue-points.active{
+    display: block;
+}
+.resources-plus-srvc{
+    display: none;
+}
+.resources-minus-srvc{
+    display: none;
+}
+.resources-minus-srvc.active{
+    display: block;
+}
+.srvc-content-bx{
+    color: #f0f0f0;
+    font-size: 1.7rem;
+    font-weight: 500;
+    transition: 0.5s;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    cursor: pointer;
+}
+.home-menue-bar ul li:hover .srvc-content-bx{
+    color: var(--hover-color);
+}
+
+.home-menue-bar ul li .srvc-content-bx span{
+    font-size: 1rem;
+}
+.resources-content-bx {
+    color: #f0f0f0;
+    font-size: 1.3rem;
+    font-weight: 500;
+    transition: 0.5s;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    cursor: pointer;
+}
+.resources-content-bx span{
+    font-size: 1rem;
+}
+
+.home-menue-bar li::after .srvc-content-bx ul li::after{
+    display: none;
 }

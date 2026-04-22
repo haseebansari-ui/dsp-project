@@ -1,6 +1,5 @@
 "use strict";
 
-
 // ===============
 // 	Sliders
 // ===============
@@ -101,7 +100,6 @@ for (let i = 0; i < accordian.length; i++) {
 	});
 }
 
-
 // script should be placed at the end of the all scripts
 // AOS
 AOS.init();
@@ -151,3 +149,49 @@ if (passwordShow && passwordInput) {
     }
   });
 }
+
+// =====================
+// 	Menu Bar Sub Menue
+// =====================
+
+const mobileMenue = document.querySelectorAll('.mobile-menue-list-bx');
+const moblieSubMenue = document.querySelector(".mobile-menue-list");
+const plusIcon = document.querySelector(".plus-srvc");
+const minusIcon = document.querySelector(".minus-srvc")
+
+mobileMenue.forEach(item => {
+  item.addEventListener("click", () => {
+    if (moblieSubMenue.style.display === "none") {
+      moblieSubMenue.style.display = "block";
+      plusIcon.style.display = "none";
+      minusIcon.style.display = "block";
+    } else {
+      moblieSubMenue.style.display = "none";
+      plusIcon.style.display = "block";
+      minusIcon.style.display = "none";
+    }
+  });
+});
+
+// ==================================
+// 	Menu Bar Sub Menue bar resources
+// ==================================
+
+const resoucesMenue = document.querySelectorAll('.resources-sub-menue-list');
+const resourcesMoblieSubMenue = document.querySelector(".resources-sub-menue-points");
+const resourcesPlusIcon = document.querySelector(".resources-plus-srvc");
+const resourcesMinusIcon = document.querySelector(".resources-minus-srvc")
+
+resoucesMenue.forEach(item => {
+  item.addEventListener("click", () => {
+    if (resourcesMoblieSubMenue.style.display === "none") {
+      resourcesMoblieSubMenue.style.display = "block";
+      resourcesPlusIcon.style.display = "none";
+      resourcesMinusIcon.style.display = "block";
+    } else {
+      resourcesMoblieSubMenue.style.display = "none";
+      resourcesPlusIcon.style.display = "block";
+      resourcesMinusIcon.style.display = "none";
+    }
+  });
+});
