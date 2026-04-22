@@ -1911,7 +1911,7 @@ header {
     display: flex;
     align-items: center;
     line-height: 2;
-    background: var(--hover-color);
+    background: #f6f6f6;
     border-radius: 30px;
     transform: translateX(-100%);
     opacity: 0;
@@ -2109,6 +2109,10 @@ section{
     background: transparent;
     border-bottom: 1px solid;
     border-color: var(--box-shadow);
+}
+
+.login-form-sec .login-field-bx .input-field{
+    border-radius: 0;
 }
 
 .login-field-bx .input-field::placeholder{
@@ -2333,6 +2337,10 @@ section{
     font-size: 1rem;
 }
 
-.home-menue-bar li::after {
-    display: none;
+
+.home-menue-bar ul li:hover .resources-content-bx{
+        color: var(--hover-color);
+}
+.home-menue-bar ul li:hover .resources-content-bx span{
+        color: var(--hover-color);
 }
