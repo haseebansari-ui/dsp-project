@@ -43,6 +43,7 @@ li {
     display: none;
 }
 
+
 /* ---- Reusable Code ---- */
 
 .wrapper {
@@ -342,11 +343,14 @@ header {
 	justify-content: center;
 	align-items: center;
 	gap: 2rem;
-	margin: 2.5rem 0 2.5rem;
+	margin: 3rem 0 2.5rem;
 }
 
 .side-menue-social-link a {
 	font-size: 1.5rem;
+}
+.side-menue-social-link a i{
+    font-size: 1.8rem;
 }
 
 .side-menue-info {
@@ -357,8 +361,15 @@ header {
 	font-size: 1.5rem;
 }
 
-.side-menue-contact-info {
-	margin: 1rem 0;
+.side-menue-info span i{
+    font-size: 2.3rem;
+}
+
+.side-menue-contact-info-bx {
+	margin-top: 2rem;
+}
+.side-menue-info{
+    margin-bottom: 1.5rem;
 }
 
 .side-menu-close {
@@ -412,6 +423,7 @@ header {
 	background-position: 100% 0%;
 	width: 100%;
 	position: relative;
+    overflow-y: hidden;
 }
 .hero-banner::after {
 	content: ' ';
@@ -694,6 +706,9 @@ header {
     text-align: center;
     font-size: 16px;
     font-weight: 500;
+}
+.about-sec .butn-1{
+    padding: 13px 30px;
 }
 .rounded-pill {
     border-radius: 50rem !important;
@@ -2262,6 +2277,15 @@ section{
     color: #fff;
     font-size: 1.5rem;
 }
+.signup-content .back-box{
+    position: absolute;
+    top: -264px;
+    left: -105px;
+}
+.signup-content .back-box .back-btn{
+     background: #fff;
+     color: var(--font-colour);
+}
 
 /* --- Mobile Menue Section --- */
 
@@ -2387,4 +2411,57 @@ section{
     font-weight: bold;
     text-transform: uppercase;
     pointer-events: none;
+}
+
+.publisher-info-sec .solution-heading h2{
+    margin-bottom: 1.5rem;
+}
+.publisher-info-sec .solution-heading{
+    margin-bottom: 3rem;
+}
+.publisher-info-sec .solution-heading p{
+    text-align: center;
+}
+
+/* --- Advertisers Section --- */
+
+.advertisers-sec {
+    position: relative;
+    overflow-x: hidden;
+}
+
+.advertisers-sec .title .float-txt {
+    position: absolute;
+    top: 18px;
+    right: 123px;
+    -webkit-transform: translateX(33%);
+    transform: translateX(33%);
+    line-height: 0.7;
+    font-size: 220px;
+    color: #f6f6f6;
+    font-weight: bold;
+    text-transform: uppercase;
+    pointer-events: none;
+}
+
+.publisher-img img{
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* --- Blog Detail Page Section --- */
+.blog-img-main-section{
+    margin-top: 5rem;
+}
+.blog-detail-img img{
+    width: 100%;
+}
+.blog-detail-img{
+    margin-bottom: 3rem;
+}
+.blog-content-sub-division{
+    margin-bottom: 2rem;
+}
+.blog-content-sub-division h6{
+    font-size: 1.8rem;
 }
