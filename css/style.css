@@ -419,7 +419,7 @@ header {
 	top: 0;
 	left: 0;
 	background: url(../img/hero_shap.png);
-	height: 728px;
+	height: 100vh;
 	width: 100%;
 	background-repeat: no-repeat;
 	background-position: top center;
@@ -473,7 +473,7 @@ header {
 	position: absolute;
     top: 80px;
     right: 0;
-    font-size: 220px;
+    font-size: 200px;
     line-height: 1;
     background-image: url(../img/ltr1.jpg);
     background-size: contain;
@@ -486,9 +486,9 @@ header {
 }
 .hero-banner .ltr2{
 	position: absolute;
-    bottom: -147px;
+    bottom:  -142px;
     left: 0;
-    font-size: 220px;
+    font-size: 200px;
     line-height: 1;
     background-image: url(../img/ltr2.jpg);
     background-size: contain;
@@ -2019,20 +2019,28 @@ header {
     background-color: transparent;
     border-radius: 0;
     border: 0;
-    border-bottom: 1px solid #9993;
+    border-bottom: 1px solid var(--font-colour);
     padding: 15px 0;
     width: 100%;
+}
+
+.contact-info-holder::placeholder {
+    color: var(--font-colour);
 }
 
 .form-control{
     background-color: transparent;
     border-radius: 0;
     border: 0;
-    border-bottom: 1px solid #9993;
-    padding: 15px 0;
+    border-bottom: 1px solid var(--font-colour);
+    padding: 15px 11px;
 }
 .form-control input::focus{
     outline: none;
+    box-shadow: none;
+}
+.form-control::placeholder{
+    color: var(--font-colour);
 }
 section{
     overflow-x: hidden;
@@ -2048,7 +2056,7 @@ section{
     font-weight: 500;
 }
 
-/* --- Contact Us Section --- */
+/* --- Faq Section --- */
 
 .faq-section {
     position: relative;
@@ -2102,9 +2110,8 @@ section{
 
 .login-field-bx .input-field{
     display: block;
-    display: block;
     width: 100%;
-    padding: 1rem 0.5rem;
+    padding: 1rem 0;
     border-radius: 0.5rem;
     background: transparent;
     border-bottom: 1px solid;
@@ -2265,15 +2272,10 @@ section{
 .home-menue-bar li ul li{
     padding: 0;
 }
-/* .home-menue-bar li ul{
-    display: none;
-}
-.home-menue-bar li:hover ul {
-    display: block;
-} */
 
 .home-menue-bar ul li ul li a{
     font-size: 1.3rem;
+    padding-left: 1rem; 
 }
 
 .home-menue-bar li:hover ul li{
@@ -2291,18 +2293,40 @@ section{
     display: Block;
 }
 
-.minus-srvc{
-    display: none;
-}
-
-/* .home-menue-bar ul li a.servc-menue-title{
-    display: flex;
-    align-items: center;
-    gap:1rem;
-} */
 
 .home-menue-bar ul li ul li ul li a{
     padding-left: 1rem;
+}
+
+
+.srvc-content-bx{
+    color: #f0f0f0;
+    font-size: 1.7rem;
+    font-weight: 500;
+    transition: 0.5s;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    cursor: pointer;
+}
+
+.srvc-content-bx  span.minus-srvc{
+    display: none;
+}
+
+.srvc-content-bx  span.minus-srvc.active{
+    display: block;
+}
+.srvc-content-bx  span.plus-srvc.active{
+    display: none;
+}
+
+.home-menue-bar ul li:hover .srvc-content-bx{
+    color: var(--hover-color);
+}
+
+.home-menue-bar ul li .srvc-content-bx span{
+    font-size: 1rem;
 }
 
 .resources-sub-menue-points{
@@ -2320,23 +2344,7 @@ section{
 .resources-minus-srvc.active{
     display: block;
 }
-.srvc-content-bx{
-    color: #f0f0f0;
-    font-size: 1.7rem;
-    font-weight: 500;
-    transition: 0.5s;
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    cursor: pointer;
-}
-.home-menue-bar ul li:hover .srvc-content-bx{
-    color: var(--hover-color);
-}
 
-.home-menue-bar ul li .srvc-content-bx span{
-    font-size: 1rem;
-}
 .resources-content-bx {
     color: #f0f0f0;
     font-size: 1.3rem;
@@ -2347,6 +2355,7 @@ section{
     gap: 1rem;
     cursor: pointer;
 }
+
 .resources-content-bx span{
     font-size: 1rem;
 }
@@ -2357,4 +2366,25 @@ section{
 
 .resources-content-bx:hover{
         color: var(--hover-color);
+}
+
+/* --- Publisher Section --- */
+
+.publisher-sec {
+    position: relative;
+    overflow-x: hidden;
+}
+
+.publisher-sec .title .float-txt {
+    position: absolute;
+    top: 18px;
+    right: 123px;
+    -webkit-transform: translateX(33%);
+    transform: translateX(33%);
+    line-height: 0.7;
+    font-size: 220px;
+    color: #f6f6f6;
+    font-weight: bold;
+    text-transform: uppercase;
+    pointer-events: none;
 }
