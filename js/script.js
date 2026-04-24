@@ -78,14 +78,11 @@ $(".posts-slider").slick({
 // ===============
 
 const header = document.querySelector("header");
-const navColor = document.querySelectorAll(".main-navbar ul li a");
 window.addEventListener("scroll", () => {
   if (window.scrollY > 0) {
     header.classList.add("h-scroll");
-    navColor.classList.add("active");
   } else {
     header.classList.remove("h-scroll");
-    navColor.classList.remove("active");
   }
 });
 
