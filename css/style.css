@@ -994,6 +994,10 @@ header {
 	box-shadow: 0 0 20px #0001;
 }
 
+.services-sec .service-card .icon img {
+	width: 100%;
+}
+
 .services-slider {
 	padding-top: 45px;
 }
@@ -1116,6 +1120,10 @@ header {
 
 .mb-20 {
 	margin-bottom: 20px !important;
+}
+
+.features-sec .feat-card .icon img {
+	width: 100%;
 }
 
 /* testimonial */
