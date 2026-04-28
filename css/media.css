@@ -412,7 +412,12 @@
   .faq-section .title .float-txt {
     right: 135px;
   }
-  
+  .hero-banner .ltr2 {
+    bottom: -333px;
+  }
+  .hero-content p {
+    font-size: 18px;
+  }
 }
 
 
