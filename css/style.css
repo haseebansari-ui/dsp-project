@@ -1300,10 +1300,15 @@ header {
 	margin-top: 30px;
 	height: 80px;
     width: 150px;
+	border-radius: 0.5rem;
 }
 .clients-sec .cards .logo img{
 	width: 100%;
 	object-fit: cover;
+}
+
+.clients-sec .cards .logo:hover{
+	box-shadow: 0 0 20px rgb(8 113 250 / 41%);
 }
 
 /* Blog */
