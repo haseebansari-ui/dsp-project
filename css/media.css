@@ -111,6 +111,31 @@
     width: 190px;
 }
 
+.service-head-img{
+  display: none;
+}
+
+.service-sec .title .float-txt{
+  top: -81px;
+  right: 307px;
+  font-size: 128px;
+}
+.service-sec.pt-pb {
+    padding-bottom: 5rem !important;
+}
+.srvc-inn-pg-sec.sec-padding2 {
+    padding: 3rem 0;
+}
+.vision-sec .main-text{
+  font-size: 2rem;
+  margin-bottom: 25px;
+}
+.platform-sec .title .float-txt{
+  top: -64px;
+  right: 348px;
+  font-size: 100px;
+}
+
 }
 
 @media screen and (max-width: 767px){
@@ -286,6 +311,14 @@
   .hero-content {
     top: -424px;
   }
+  .service-sec .title .float-txt{
+    right: 169px;
+    font-size: 115px;
+  }
+  .platform-sec .title .float-txt{
+    top: -64px;
+    right: 169px;
+  }
 }
 
 @media screen and (max-width: 576px){
@@ -370,6 +403,15 @@
   .about-inner-pg-client-sec .cards .logo img {
     width: 80%;
   }
+  .service-sec .title .float-txt{
+    font-size: 96px;
+    top: -64px;
+  }
+ .platform-sec .title .float-txt {
+    top: -56px;
+    right: 169px;
+    font-size: 83px;
+  }
 }
 
 @media screen and (max-width: 479px){
@@ -420,6 +462,17 @@
   }
   .hero-content p {
     font-size: 18px;
+  }
+  .service-sec .title .float-txt{
+    font-size: 75px;
+    top: -55px;
+    right: 132px;
+  }
+  .platform-sec .title .float-txt {
+    top: -49px;
+    right: 123px;
+    font-size: 68px;
+
   }
 }
 
