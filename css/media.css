@@ -78,6 +78,40 @@
 .faq-section .inner-content-about .inner-content-papra{
   margin-top: 10px;
 }
+.hero-content{
+  top: -569px;
+}
+.hero-banner h1 {
+  margin: 255px 0 0rem;
+  font-size: 55px;
+}
+.hero-content p {
+  font-size: 20px;
+}
+.hero-banner .ltr1{
+  top: 207px;
+  right: 0;
+  font-size: 100px;
+}
+.hero-banner .ltr2{
+  bottom: -490px;
+  font-size: 100px;
+}
+.technologies-sec .row{
+  gap:0 !important;
+  justify-content: inherit !important;
+}
+
+.technologies-bx .tech-img-bx{
+  height: 109px;
+  width: 100%;
+  margin-bottom: 1.8rem;
+}
+
+.technologies-bx .tech-img-bx img {
+    width: 190px;
+}
+
 }
 
 @media screen and (max-width: 767px){
@@ -236,6 +270,22 @@
     }
   .faq-section .title .float-txt{
     right: 295px;
+  }
+  .hero-banner video{
+    width: auto;
+    height: 500px;
+  }
+  .hero-banner h1 {
+    margin: 70px 0 10px;
+  }
+  .hero-banner .ltr1{
+    top: 20px;
+  }
+  .hero-banner .ltr2{
+    bottom: -292px;
+  }
+  .hero-content {
+    top: -424px;
   }
 }
 
