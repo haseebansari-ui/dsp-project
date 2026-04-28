@@ -33,7 +33,7 @@ $(".services-slider").slick({
 });
 $(".testimonial-slider").slick({
   infinite: true,
-  slidesToShow: 2,
+  slidesToShow: 3,
   slidesToScroll: 2,
   speed: 1500,
   autoplay: true,
