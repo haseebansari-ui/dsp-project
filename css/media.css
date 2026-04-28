@@ -29,7 +29,6 @@
     font-size: 115px;
 }
 .bout-inner-services-content-bx h6 {
-    color: #fff;
     font-size: 2rem;
     font-weight: bold;
     margin-bottom: 1rem;
@@ -315,10 +314,7 @@
     right: 162px;
     font-size: 83px;
   }
-  /* .play-btn{
-    width: 35%;
-  } */
-
+  
   .solution-sec.inner-about-sec .title .float-txt {
     right: 202px;
   }
@@ -366,6 +362,14 @@
   }
   .hero-content{
     padding: 0 1rem;
+  }
+  .about-inner-pg-client-sec .cards .logo {
+    height: 145px;
+    width: 319px;
+    margin: 18px auto;
+  }
+  .about-inner-pg-client-sec .cards .logo img {
+    width: 80%;
   }
 }
 

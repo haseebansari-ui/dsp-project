@@ -1303,7 +1303,7 @@ header {
 	border-radius: 0.5rem;
 }
 .clients-sec .cards .logo img{
-	width: 100%;
+	width: 110px;
 	object-fit: cover;
 }
 
@@ -1581,6 +1581,7 @@ header {
 	border-radius: 100%;
 }
 
+
 /* About Inner page Services Section */
 
 .about-inner-pg-services {
@@ -1728,11 +1729,7 @@ header {
 .about-inner-pg-client-sec .bout-inner-services-info-para .services-info-para {
 	max-width: 500px;
 }
-/* .clients-logo-container{
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    gap: 0 1rem;
-} */
+
 .client-company-logo a {
 	padding: 50px 30px;
 	display: -webkit-box;
@@ -1764,6 +1761,27 @@ header {
 }
 .client-logo-shap img {
 	width: 70%;
+}
+
+.about-inner-pg-client-sec .cards .logo {
+	padding: 50px 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    margin-top: 30px;
+    height: 80px;
+    width: 150px;
+    border-radius: 0.5rem;
+	border: 1px solid #9993;
+}
+.about-inner-pg-client-sec .cards .logo:hover{
+	box-shadow: 0 0 15px rgb(8 113 250 / 41%);
+}
+.about-inner-pg-client-sec .cards .logo img{
+	width: 110px;
 }
 
 /* --- Services Section --- */
