@@ -354,8 +354,7 @@
     margin: 18px auto;
   }
   .clients-sec .cards .logo img {
-    width: 49%;
-    object-fit: cover;
+    width: 80%;
   }
   .hero-banner .ltr1{
     top: 0;
