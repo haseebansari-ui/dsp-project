@@ -351,51 +351,61 @@
   .capability-content {
     margin-bottom: 2rem;
   }
+  .clients-sec .cards .logo{
+    height: 145px;
+    width: 319px;
+    margin: 18px auto;
+  }
+  .clients-sec .cards .logo img {
+    width: 49%;
+    object-fit: cover;
+  }
 }
 
 @media screen and (max-width: 479px){
-    .hero-content h1 .item small {
-        font-size: 19px;
-    }
-    .hero-content .txt{
-      font-size: 30px;
-    }
-    .hero-banner::after {
-      background-size: 308px;
-    }
-    .solution-sec .title .float-txt {
-      right: 134px;
-      font-size: 63px;
-      top: -50px;
-    }
-    .solution-sec.inner-about-sec .title .float-txt {
-        right: 140px;
-        top: -39px;
-        font-size: 60px;
-    }
+  .hero-content h1 .item small {
+    font-size: 19px;
+  }
+  .hero-content .txt{
+    font-size: 30px;
+  }
+  .hero-banner::after {
+    background-size: 308px;
+  }
+  .solution-sec .title .float-txt {
+    right: 134px;
+    font-size: 63px;
+    top: -50px;
+  }
+  .solution-sec.inner-about-sec .title .float-txt {
+    right: 140px;
+    top: -39px;
+    font-size: 60px;
+  }
    
-    .client-logo-shap {
-      top: -118px;
-      right: -6px;
-    }
-    .about-sec.inner-about-sec .title .float-txt {
-      right: 127px;
-      top: -20px;
-      font-size: 103px;
-    }
-    .blog-section.inner-about-sec .title .float-txt {
-      right: 122px;  
-    }
-        .contact-sec .inner-about-pg-hero h2 {
-        font-size: 67px !important;
-    }
-    .contact-sec.contact-sec .title .float-txt {
-      right: 126px;
-      font-size: 72px;
-    }
-    .faq-section .title .float-txt {
-        right: 135px;
-    }
+  .client-logo-shap {
+    top: -118px;
+    right: -6px;
+  }
+  .about-sec.inner-about-sec .title .float-txt {
+    right: 127px;
+    top: -20px;
+    font-size: 103px;
+  }
+  .blog-section.inner-about-sec .title .float-txt {
+    right: 122px;  
+  }
+  .contact-sec .inner-about-pg-hero h2 {
+    font-size: 67px !important;
+  }
+  .contact-sec.contact-sec .title .float-txt {
+    right: 126px;
+    font-size: 72px;
+  }
+  .faq-section .title .float-txt {
+    right: 135px;
+  }
+  
 }
 
 
