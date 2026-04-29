@@ -132,10 +132,30 @@
 }
 .platform-sec .title .float-txt{
   top: -64px;
-  right: 348px;
+  right: 319px;
   font-size: 100px;
 }
-
+.advertisers-sec .shap img {
+  display: none;
+}
+.advertisers-sec .title .float-txt{
+  top: -64px;
+  right: 264px;
+  font-size: 100px;
+}
+.publisher-sec .title .float-txt{
+  top: -65px;
+  right: 305px;
+  font-size: 100px;
+}
+.publisher-sec .shap{
+  display: none;
+}
+.ndustries-banner-sec .title .float-txt{
+  top: -65px;
+  right: 320px;
+  font-size: 100px;
+}
 }
 
 @media screen and (max-width: 767px){
@@ -319,6 +339,21 @@
     top: -64px;
     right: 169px;
   }
+  .advertisers-sec .title .float-txt{
+    right: 73px;
+  }
+  .publisher-sec .title .float-txt {
+    top: -62px;
+    right: 174px;
+    font-size: 89px;
+  }
+
+  .ndustries-banner-sec .title .float-txt {
+    top: -54px;
+    right: 208px;
+    font-size: 83px;
+  }
+  
 }
 
 @media screen and (max-width: 576px){
@@ -412,6 +447,24 @@
     right: 169px;
     font-size: 83px;
   }
+  .advertisers-sec .title .float-txt {
+    right: 13px;
+  }
+  .advertisers-sec .title .float-txt {
+    right: 152px;
+    top: -55px;
+    font-size: 70px;
+  }
+  .publisher-sec .title .float-txt {
+    top: -53px;
+    right: 189px;
+    font-size: 70px;
+  }
+  .ndustries-banner-sec .title .float-txt {
+    top: -51px;
+    right: 173px;
+    font-size: 76px;
+  }
 }
 
 @media screen and (max-width: 479px){
@@ -473,6 +526,21 @@
     right: 123px;
     font-size: 68px;
 
+  }
+  .advertisers-sec .title .float-txt {
+    right: 137px;
+    top: -44px;
+    font-size: 52px;
+  }
+  .publisher-sec .title .float-txt {
+    top: -53px;
+    right: 125px;
+    font-size: 60px;
+  }
+  .ndustries-banner-sec .title .float-txt {
+    top: -51px;
+    right: 141px;
+    font-size: 58px;
   }
 }
 

@@ -569,6 +569,8 @@ header {
 	font-size: 200px;
 	line-height: 1;
 	background: linear-gradient(90deg, #00f0ff, #7b61ff, #00ff9d);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
 	color: transparent;
 	text-transform: uppercase;
 }
@@ -579,6 +581,8 @@ header {
 	font-size: 200px;
 	line-height: 1;
 	background: linear-gradient(90deg, #0059ff, #61ffca, #00ff9d);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
 	color: transparent;
 	text-transform: uppercase;
 }
@@ -2554,6 +2558,24 @@ section {
 }
 
 /* -- Industries -- */
+.ndustries-banner-sec {
+    position: relative;
+    overflow-x: hidden;
+}
+
+.ndustries-banner-sec .title .float-txt {
+    position: absolute;
+    top: 0;
+    right: -220px;
+    -webkit-transform: translateX(33%);
+    transform: translateX(33%);
+    line-height: 0.7;
+    font-size: 220px;
+    color: #f6f6f6;
+    font-weight: bold;
+    text-transform: uppercase;
+    pointer-events: none;
+}
 
 .industries-sec .feat-card .icon-80 {
     width: 85px;
