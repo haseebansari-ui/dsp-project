@@ -156,6 +156,14 @@
   right: 320px;
   font-size: 100px;
 }
+.login-form-sec .form-container {
+  height: inherit;
+  width: 100%;
+}
+.login-form-sec .back-btn {
+  padding: 1rem 1rem;
+  margin: 1rem 0 0 0rem;
+}
 }
 
 @media screen and (max-width: 767px){
@@ -353,7 +361,9 @@
     right: 208px;
     font-size: 83px;
   }
-  
+  .login-form-sec .form-container .form-img{
+    display: none;
+  }
 }
 
 @media screen and (max-width: 576px){
