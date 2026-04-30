@@ -713,6 +713,7 @@ header {
 	z-index: 20;
 	padding: 50px 0;
 	display: flex;
+	justify-content: center;
 }
 .butn-1 {
 	padding: 10px 33px;
@@ -724,7 +725,7 @@ header {
 	font-weight: 500;
 }
 .about-sec .butn-1 {
-	padding: 13px 30px;
+	padding: 13px 67px;
 }
 .rounded-pill {
 	border-radius: 50rem !important;
@@ -2230,24 +2231,19 @@ section {
     padding: 4rem 0 4rem;
 }
 /* --- Login Form Section --- */
+.login-form-sec.sec-padding{
+	padding: 1rem 0;
+}
 
 .form-container {
 	height: 463px;
-	width: 922px;
+	width: 500px;
 	margin: 45px auto;
 	/* box-shadow: 0 0px 5px #c1bebe; */
 	box-shadow: 0 0 10px rgba(8, 113, 250, 0.699);
 	border-radius: 1rem;
 }
-.form-img {
-	height: 463px;
-	overflow: hidden;
-}
-.form-img img {
-	width: 100%;
-	height: 463px;
-	border-radius: 0.8rem 0 0 0.8rem;
-}
+
 .login-form-bx {
 	padding: 31px;
 }
@@ -2332,7 +2328,7 @@ section {
 
 /* --- SignUp Form Section --- */
 
-.signup-main-container .form-img {
+/* .signup-main-container .form-img {
 	height: 100vh;
 	overflow: inherit;
 	background-image: url(../assets/signupimg1.jpg);
@@ -2343,7 +2339,7 @@ section {
 	align-items: center;
 	justify-content: center;
 	position: relative;
-}
+} */
 /* .signup-main-container .form-img::before {
 	content: ' ';
 	position: absolute;
@@ -2360,17 +2356,13 @@ section {
 	border-radius: 0.8rem 0 0 0.8rem;
 }
 .signup-content h6 {
-	font-size: 2rem;
-	color: var(--font-colour);
-	text-align: center;
-	margin-bottom: 1rem;
+	font-size: 2.8rem;
+    color: var(--font-colour);
+    text-align: center;
+    margin: 2rem 0 1.5rem;
 }
-.signup-content p {
-	text-align: center;
-}
-.signup-form-bx {
-	padding: 2rem 4rem;
-}
+
+
 
 .signup-form-container .form-control {
 	background-color: transparent;
@@ -2407,20 +2399,8 @@ section {
 	position: relative;
 	z-index: 3;
 }
-.form-img .signup-title h6 {
-	color: #fff;
-	font-size: 3rem;
-}
 
-.form-img p {
-	color: #fff;
-	font-size: 1.5rem;
-}
-.signup-content .back-box {
-	position: absolute;
-	top: -313px;
-    left: -391px;
-}
+
 .signup-content .back-box .back-btn {
 	background: #f6f6f6;
     color:var(--font-colour);
@@ -2428,6 +2408,74 @@ section {
 }
 .signup-content .back-box .back-btn:hover{
 	box-shadow: 0 0 10px rgba(8, 113, 250, 0.699);
+}
+
+.sub-content-title{
+	color: var(--font-colour);
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-bottom: 0.2rem;
+	display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+.sub-content-title span i{
+	color: rgba(8, 113, 250, 0.698);
+	font-size: 1.2rem;
+}
+.signup-title p{
+	font-size: 18px;
+    text-align: center;
+}
+
+.signup-title{
+	margin-bottom: 2rem;
+}
+.signup-sub-content-bx p{
+	padding-left: 33px;
+}
+.looking-frwd-title{
+	color: rgba(8, 113, 250, 0.698);
+	padding-left: 33px;
+	font-weight: bold;
+}
+
+.signup-main-container-two{
+	padding: 1rem 2rem;
+    border: 1px solid #ebebeb;
+    border-radius: 2rem;
+    box-shadow: 0 0 20px rgba(8, 113, 250, 0.698);
+}
+.form-img{
+	margin-top: 37px;
+}
+
+.back-box .back-btn{
+	    padding: 1rem;
+    background: var(--font-colour);
+    color: #000;
+    border-radius: 100%;
+    margin: 0 0 0 8rem;
+    font-size: 1.2rem;
+    background: #ebebeb;
+    box-shadow: 0 0 10px #ebebeb;
+	transition: 0.5s;
+}
+
+.back-box .back-btn:hover{
+	box-shadow: 0 0 10px rgba(8, 113, 250, 0.698);
+}
+.signup-form-sec.sec-padding{
+	padding: 1rem 0;
+}
+.signup-main-container-two .login-btn{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap:0.5rem;
+}
+.signup-main-container-two .login-btn{
+	gap: 0.8rem;
 }
 
 /* --- Mobile Menue Section --- */
@@ -2683,4 +2731,88 @@ section {
 .technologies-sec .tech-heading {
 	text-align: center;
 	margin-bottom: 3rem;
+}
+
+/* --- Marquee Scroll --- */
+
+
+/* .marquee {
+  overflow: hidden;
+  white-space: nowrap;
+  width: 100%;
+  background: #f5f9ff;
+  padding: 10px 0;
+  display: flex;
+  gap: 2rem;
+}
+
+.marquee-content {
+  display: inline-block;
+  padding-left: 100%;
+  animation: scroll 12s linear infinite;
+}
+
+/* Pause on hover */
+/* .marquee:hover .marquee-content {
+  animation-play-state: paused;
+}
+
+.marquee-content span {
+  display: inline-block;
+  margin-right: 50px;
+  font-weight: 600;
+} */
+
+/* Animation */
+/* @keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.marquee-content .tech-img-bx img{
+	width: 150px;
+} */
+ 
+
+
+.carousel{
+	display: flex;
+	overflow: auto;
+	width: 100%;
+	margin: 0 auto;
+}
+.carousel::-webkit-scrollbar{
+	display: none;
+}
+.group{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 2rem;
+	animation: spin 10s infinite linear;
+	padding-right: 1rem;
+}
+.carousel:hover .group {
+  animation-play-state: paused;
+}
+.cards{
+	flex: 0 0 5rem;
+	padding: 1rem;
+	text-align: center;
+	font-size: 2rem;
+	align-content:center;
+	border-radius: 1rem;
+}
+
+@keyframes spin {
+	from {translate:0;}
+	to{translate: -100%;}
+}
+
+.cards img{
+	width: 200px;
 }
