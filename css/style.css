@@ -82,6 +82,13 @@ header {
 	-webkit-backdrop-filter: blur(10px);
 	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
+
+.logo img{
+	width: 130px;
+}
+.logo-footer img{
+	width: 200px;
+}
 .home-header .main-navbar ul li a {
 	color: #fff;
 }
@@ -2841,3 +2848,10 @@ section {
 .cards img{
 	width: 185px;
 }
+
+.about-indx-img{
+	border-radius: 1.8rem;
+	overflow: hidden;
+	box-shadow: 0 0 30px blue;
+}
+
