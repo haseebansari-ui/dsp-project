@@ -688,11 +688,31 @@ header {
 	font-weight: 500;
 }
 .main-img {
-	width: 415px;
-	height: 415px;
-	max-height: 90vw;
-	max-width: 90vw;
+    width: 415px;
+    height: 415px;
+    max-height: 90vw;
+    max-width: 90vw;
+    background: url(../assets/aboutusimg1.jpg);
+    background-position: 15% 22%;
+    background-size:1174px;
+    border-radius: 1.5rem;
+    padding: 2rem;
+    box-shadow: 0 0 20px blue;
+	position: relative;
 }
+/* .logo-text{
+	position: absolute;
+	top:0;
+	left:0;
+	height:50px;
+	width: 185px;
+    background: #2a0058;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+} */
 .img-cover {
 	width: 100%;
 	height: 100%;
@@ -1873,7 +1893,7 @@ header {
 
 .vision-sec .tc-goals-st1 h2 {
 	position: relative;
-	font-size: 140px;
+	font-size: 70px;
 	color: transparent;
 	-webkit-text-stroke: 1px rgba(47, 146, 238, 0.411);
 	text-transform: uppercase;
@@ -2014,6 +2034,9 @@ header {
 	font-weight: bold;
 	text-transform: uppercase;
 	pointer-events: none;
+	background: linear-gradient(90deg, #bfe4ffad, #d6f0ff, #eaf7ff);
+	-webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 .solution-heading h2 {
 	color: var(--font-colour);
@@ -2056,6 +2079,10 @@ header {
 	transform: translateX(0);
 	opacity: 1;
 	visibility: visible;
+}
+
+.solution-info-sec .feat-card:hover{
+	box-shadow: 0 0 20px rgba(8, 113, 250, 0.699);
 }
 
 .solution-sec .btn-play.butn {
@@ -2730,7 +2757,6 @@ section {
 
 .technologies-sec .tech-heading {
 	text-align: center;
-	margin-bottom: 3rem;
 }
 
 /* --- Marquee Scroll --- */
@@ -2801,7 +2827,6 @@ section {
 }
 .cards{
 	flex: 0 0 5rem;
-	padding: 1rem;
 	text-align: center;
 	font-size: 2rem;
 	align-content:center;
@@ -2814,5 +2839,5 @@ section {
 }
 
 .cards img{
-	width: 200px;
+	width: 185px;
 }
