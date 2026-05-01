@@ -83,6 +83,20 @@ header {
 	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
+.logo{
+	position: relative;
+}
+.logo::after{
+	content: ' ';
+	position: absolute;
+	top:0;
+	left: 0;
+	height: 20px;
+	width: 20px;
+	background:#fff;
+	border-radius: 100%;
+	box-shadow: 0 0 20px #fff;
+}
 .logo img{
 	width: 130px;
 }
