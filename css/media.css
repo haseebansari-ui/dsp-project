@@ -17,7 +17,7 @@
     display: none;
 }
   .main-header img{
-    width: 90px;
+    width: 195px;
   }
   .play-btn{
     display: block;
@@ -163,6 +163,17 @@
 .login-form-sec .back-btn {
   padding: 1rem 1rem;
   margin: 1rem 0 0 0rem;
+}
+.footer-sec {
+    position: relative;
+    overflow-x: hidden;
+    background: url(../assets/footerbg1.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 76%;
+    background-size: 100%;
+}
+header{
+  padding: 1.3rem 0;
 }
 }
 
@@ -366,6 +377,10 @@
   }
   .back-box .back-btn {
     margin: 0 0 0 3rem;
+}
+  .main-header img {
+    width: 150px;
+  }
 }
 
 @media screen and (max-width: 576px){
