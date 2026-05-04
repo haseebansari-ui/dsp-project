@@ -434,6 +434,9 @@ header {
 .home-contact-info ul li a {
 	color: #000;
 }
+.home-contact-info ul li a:hover {
+	color: rgba(8, 113, 250, 0.699);
+}
 
 .home-logo {
 	color: #000;
@@ -475,6 +478,10 @@ header {
 }
 .side-menue-social-link a i {
 	font-size: 1.8rem;
+	transition: 0.5s linear;
+}
+.side-menue-social-link a i:hover{
+	color: rgba(8, 113, 250, 0.699);
 }
 
 .side-menue-info {
@@ -484,6 +491,7 @@ header {
 	justify-content: center;
 	font-size: 1.5rem;
 }
+
 
 .side-menue-info span i {
 	font-size: 2.3rem;
@@ -533,7 +541,7 @@ header {
 }
 
 .home-logo img {
-	width: 200px;
+	width: 300px;
 }
 
 /* ---- Hero Section ---- */
@@ -1911,6 +1919,8 @@ header {
 	height: 430px;
 	width: 357px;
 	overflow: hidden;
+	border-radius: 1rem;
+	box-shadow: 0 0 10px rgba(8, 113, 250, 0.699);
 }
 
 .service-head-img img {
@@ -1934,7 +1944,7 @@ header {
 
 .vision-sec .tc-goals-st1 h2 {
 	position: relative;
-	font-size: 70px;
+	font-size: 100px;
 	color: transparent;
 	-webkit-text-stroke: 1px rgba(47, 146, 238, 0.411);
 	text-transform: uppercase;
@@ -2418,11 +2428,7 @@ section {
 	background: rgba(0, 0, 0, 0.365);
 	z-index: 2;
 } */
-.signup-main-container .form-img img {
-	width: 100%;
-	height: 100%;
-	border-radius: 0.8rem 0 0 0.8rem;
-}
+
 .signup-content h6 {
 	font-size: 2.8rem;
     color: var(--font-colour);
@@ -2498,6 +2504,9 @@ section {
 
 .signup-title{
 	margin-bottom: 2rem;
+}
+.signup-title img{
+	width: 80%;
 }
 .signup-sub-content-bx p{
 	padding-left: 33px;
@@ -2893,4 +2902,44 @@ section {
 }
 .about-indx-img img{
 	width: 100%;
+}
+
+
+/* -- accordian -- */
+
+.accordian{
+	margin-bottom: 1rem;
+	box-shadow: 0 0 20px #ebebeb;
+}
+.accordian-header{
+	background: rgba(0, 89, 255, 0.466);
+	color: #fff;
+	padding: 1rem 1.5rem;
+	position: relative;
+}
+
+.accordian-header::after{
+	content: "+";
+	position: absolute;
+	top:30%;
+	right: 0;
+	margin-right: 10px;
+}
+
+.accordian-header.active::after{
+	content: "-";
+}
+
+.acc-content{
+	max-height: 0;
+	padding: 1rem 1.5rem;
+	line-height: 1.6;
+	overflow: hidden;
+	display: none;
+	/* transition: max-height  1s linear;
+	transition: padding,  1s linear; */
+}
+.acc-content.active{
+	max-height:1000px;
+	display: block;
 }

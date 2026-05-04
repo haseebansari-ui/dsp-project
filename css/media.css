@@ -194,8 +194,8 @@ header{
   
   .head-services{display: none;}
   .hero-banner{
-      overflow-y: hidden;
-      background-size: 973px;
+    overflow-y: hidden;
+    background-size: 973px;
   }
   .hero-banner::after{
     background-position: top center;
@@ -203,7 +203,7 @@ header{
     height: 100vh;
   }
   .hero-content .txt{
-      font-size: 47px;
+    font-size: 47px;
   }
   .hero-content h1 .item small{
     font-size: 22px;
