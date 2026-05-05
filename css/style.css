@@ -43,6 +43,10 @@ li {
 	display: none;
 }
 
+.title-color{
+	color: #0059ff;
+}
+
 /* ---- Reusable Code ---- */
 
 .wrapper {
@@ -63,6 +67,10 @@ li {
 }
 .sec-padding2 {
 	padding: 8rem 0 5rem;
+}
+
+.mr-top{
+	margin-top: 47px;
 }
 
 /* ---- Header Section ---- */
@@ -1054,7 +1062,8 @@ header {
 	height: 4px;
 }
 .services-sec .service-card .inf .progress .progress-bar {
-	background-color: #151515;
+	background-color: blue;
+	border-radius: 0.5rem;
 }
 .services-slider .slick-dots {
 	list-style: none;
@@ -1099,6 +1108,10 @@ header {
 	display: none;
 }
 
+.services-sec .items a{
+	color: inherit;
+}
+
 /* features */
 
 .features-sec .justify-content-center {
@@ -1112,6 +1125,10 @@ header {
 	border: 1px solid #9995;
 	border-radius: 30px;
 	transition: 0.5s;
+	text-align: left;
+}
+.features-sec .feat-card p{
+	line-height: 1.6;
 }
 .features-sec .feat-card:hover{
 	box-shadow: 0 0 25px rgb(8 113 250 / 41%);
@@ -1144,6 +1161,7 @@ header {
 	background-color: rgb(255, 255, 255);
 	padding: 20px;
 	border-radius: 1.5rem;
+	border: 1px solid blue;
 }
 .testimonial-sec .testi-card .rate-wrapper {
 	display: flex;
@@ -1174,7 +1192,7 @@ header {
 	font-size: 24px;
 	font-weight: bold;
 	padding-bottom: 15px;
-    margin-bottom: 35px;
+    margin-bottom: 20px;
 	border-bottom: 1px solid rgba(153, 153, 153, 0.2);
 }
 .fw-500 {
@@ -1185,6 +1203,10 @@ header {
 }
 .mt-20 {
 	margin-top: 20px !important;
+}
+.testimonial-sec .testi-card .fsz-24{
+	font-size: 18px !important;
+	line-height: 1.6;
 }
 .testimonial-slider {
 	padding-top: 45px;
@@ -1237,12 +1259,21 @@ header {
 
 .testimonial-sec .testi-card .indust-img-bx{
 	margin-bottom: 1.3rem;
+    height: 80px;
+    width: 80px;
+    box-shadow: 0 0 20px blue;
+    border-radius: 100%;
+    background: #ebebeb;
+    display: flex;
+    align-items: center;
+	justify-content: center;
 }
 .testimonial-sec .testi-card .indust-img-bx img{
 	display: block;
-	width: 100%;
-	height: 150px;
-	border-radius: 5px;
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    object-fit: cover;
 }
 
 /* numbers */
@@ -1293,6 +1324,9 @@ header {
 	background-color: var(--font-colour);
 	right: 15px;
 	bottom: 60px;
+}
+.numbers-sec .numbers .number-card .num .num-cunt{
+	font-size: 1rem;
 }
 
 /* video */
@@ -1584,7 +1618,7 @@ header {
 	transform: translateY(-50%);
 	font-size: 1.2rem;
 	color: var(--font-colour);
-	font-weight: 300;
+	font-weight: 500;
 }
 
 .accordian .contentBx.active .label::before {
@@ -1601,7 +1635,6 @@ header {
 	position: relative;
 	height: 0;
 	overflow: hidden;
-	/* transition: 0.5s; */
 }
 
 .accordian .contentBx.active .acc-content {
@@ -1628,6 +1661,14 @@ header {
 	max-width: 520px;
 	padding: 0rem;
 	margin-bottom: 0 !important;
+	margin-top: 47px;
+	line-height: 1.6;
+}
+.about-sec .inner-content-papra {
+	margin-bottom: 20px !important;
+	margin-top: 0;
+}
+.about-sec .inner-content-about{
 	margin-top: 47px;
 }
 .inner-about-sec .shap img {
@@ -1659,6 +1700,10 @@ header {
 	border-radius: 100%;
 }
 
+.bout-inner-services-content-bx h6{
+	text-align: center;
+	margin-bottom: 1rem;
+}
 
 /* About Inner page Services Section */
 
@@ -2308,6 +2353,9 @@ section {
 .faq-section.sec-padding2 {
     padding: 8rem 0 4rem;
 }
+
+
+
 /* --- Login Form Section --- */
 .login-form-sec.sec-padding{
 	padding: 1rem 0;
@@ -2814,50 +2862,6 @@ section {
 
 /* --- Marquee Scroll --- */
 
-
-/* .marquee {
-  overflow: hidden;
-  white-space: nowrap;
-  width: 100%;
-  background: #f5f9ff;
-  padding: 10px 0;
-  display: flex;
-  gap: 2rem;
-}
-
-.marquee-content {
-  display: inline-block;
-  padding-left: 100%;
-  animation: scroll 12s linear infinite;
-}
-
-/* Pause on hover */
-/* .marquee:hover .marquee-content {
-  animation-play-state: paused;
-}
-
-.marquee-content span {
-  display: inline-block;
-  margin-right: 50px;
-  font-weight: 600;
-} */
-
-/* Animation */
-/* @keyframes scroll {
-  from {
-    transform: translateX(0);
-  }
-  to {
-    transform: translateX(-100%);
-  }
-}
-
-.marquee-content .tech-img-bx img{
-	width: 150px;
-} */
- 
-
-
 .carousel{
 	display: flex;
 	overflow: auto;
@@ -2904,42 +2908,3 @@ section {
 	width: 100%;
 }
 
-
-/* -- accordian -- */
-
-.accordian{
-	margin-bottom: 1rem;
-	box-shadow: 0 0 20px #ebebeb;
-}
-.accordian-header{
-	background: rgba(0, 89, 255, 0.466);
-	color: #fff;
-	padding: 1rem 1.5rem;
-	position: relative;
-}
-
-.accordian-header::after{
-	content: "+";
-	position: absolute;
-	top:30%;
-	right: 0;
-	margin-right: 10px;
-}
-
-.accordian-header.active::after{
-	content: "-";
-}
-
-.acc-content{
-	max-height: 0;
-	padding: 1rem 1.5rem;
-	line-height: 1.6;
-	overflow: hidden;
-	display: none;
-	/* transition: max-height  1s linear;
-	transition: padding,  1s linear; */
-}
-.acc-content.active{
-	max-height:1000px;
-	display: block;
-}

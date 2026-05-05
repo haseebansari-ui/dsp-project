@@ -381,6 +381,9 @@ header{
   .main-header img {
     width: 150px;
   }
+  .ques-icon{
+    display: none;
+  }
 }
 
 @media screen and (max-width: 576px){
