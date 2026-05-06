@@ -572,6 +572,9 @@ header{
     right: 141px;
     font-size: 58px;
   }
+  .about-sec.sec-padding{
+    padding: 0 0 4rem;
+  }
 }
 
 
