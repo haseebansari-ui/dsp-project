@@ -175,6 +175,15 @@
 header{
   padding: 1.3rem 0;
 }
+.about-sec .inner-content-about {
+    margin-top: -10px;
+}
+.inner-content-about .inner-content-papra {
+  max-width: inherit;
+  }
+.inner-content-about .inner-content-papra {
+  margin-top: 0px;
+ }
 }
 
 @media screen and (max-width: 767px){
@@ -283,7 +292,7 @@ header{
     margin-bottom: 2rem !important;
   }
   .inner-content-about .inner-content-papra{
-    margin-top: 32px;
+    margin-top: 0;
   }
   .solution-sec .title .float-txt{
     top: -60px;
@@ -293,9 +302,7 @@ header{
   .footer-sec .links-wrapper{
     padding: 70px 0;
   }
-  .about-sec .inner-content-papra {
-    margin-top: 32px;
-    }
+  
   .about-sec .title.mb-5{
     margin-bottom: 2rem !important;
   }
