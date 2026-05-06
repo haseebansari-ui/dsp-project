@@ -60,10 +60,10 @@ li {
 }
 
 .sec-padding {
-	padding: 3rem 0;
+	padding: 4rem 0;
 }
 .pt-pb {
-	padding: 8rem 0;
+	padding: 8rem 0 2rem;
 }
 .sec-padding2 {
 	padding: 8rem 0 5rem;
@@ -978,6 +978,7 @@ header {
 .footer-sec .foot a {
 	color: #000 !important;
 	opacity: 1;
+	font-weight: 500;
 }
 .text-lg-end {
 	text-align: right !important;
@@ -1151,7 +1152,7 @@ header {
 .testimonial-sec {
 	position: relative;
 	background-color: #f6f6f6;
-	padding-top: 150px;
+	/* padding-top: 150px; */
 }
 .fw-200 {
 	font-weight: 400 !important;
@@ -1421,6 +1422,9 @@ header {
 
 .clients-sec .cards .logo:hover{
 	box-shadow: 0 0 20px rgb(8 113 250 / 41%);
+}
+.clients-sec .text-capitalize{
+	text-align: center;
 }
 
 /* Blog */
@@ -2301,9 +2305,14 @@ header {
 	border-bottom: 1px solid var(--font-colour);
 	padding: 15px 11px;
 }
-.form-control input::focus {
+/* .form-control input::focus {
 	outline: none;
 	box-shadow: none;
+} */
+.form-control:focus{
+	outline: 0;
+	box-shadow: none;
+	border-bottom: 1px solid var(--font-colour);
 }
 .form-control::placeholder {
 	color: var(--font-colour);
@@ -2908,3 +2917,41 @@ section {
 	width: 100%;
 }
 
+/* --- Platform Capabilities --- */
+.connection-image-container {
+    position: relative;
+    height: 500px;
+}
+.connection-image-container img {
+    width: 700px;
+    height: 500px;
+    object-fit: cover;
+	border-radius: 1rem;
+}
+
+.connection-content {
+    position: absolute;
+    top: 50%;
+    right: 170px;
+    height: auto;
+    width: 600px;
+    background: #fff;
+    padding: 1.5rem 1rem;
+    transform: translateY(-50%);
+	border-radius: 1rem;
+	box-shadow: 0 0 20px rgba(8, 113, 250, 0.698);
+}
+
+.solution-card-info ul li{
+	position: relative;
+	padding-left: 1rem;
+}
+.solution-card-info ul li::after{
+	content: " ";
+	position: absolute;
+	top: 15px;
+    left: 0;
+    height: 2px;
+    width: 10px;
+	background: var(--font-colour);
+}
