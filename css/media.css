@@ -185,7 +185,7 @@ header{
   margin-top: 0px;
  }
 
- .platform-content h2{
+ /* .platform-content h2{
 		font-size: 34px;
 	}
 
@@ -209,7 +209,7 @@ header{
 		transform: unset;
 		right: unset;
 		margin: auto;
-	}
+	} */
 }
 
 @media screen and (max-width: 767px){
@@ -421,7 +421,7 @@ header{
     display: none;
   }
 
-  .platform-image img{
+  /* .platform-image img{
 		height: 380px;
 		border-radius: 20px;
 	}
@@ -441,7 +441,7 @@ header{
 	.feature-list li{
 		font-size: 15px;
 		line-height: 1.6;
-	}
+	} */
 }
 
 @media screen and (max-width: 576px){
@@ -560,7 +560,7 @@ header{
     font-size: 14px;
   } */
 
-  .platform-image img{
+  /* .platform-image img{
 		height: 300px;
 	}
 
@@ -579,7 +579,7 @@ header{
 	.feature-list li{
 		padding-left: 22px;
 		font-size: 14px;
-	}
+	} */
 }
 
 @media screen and (max-width: 479px){
