@@ -2907,7 +2907,7 @@ section {
 }
 
 /* --- Platform Capabilities --- */
-.plat-inr-pg-img {
+/* .plat-inr-pg-img {
     position: relative;
     height: 600px;
 }
@@ -2949,8 +2949,7 @@ section {
     height: 2px;
     width: 10px;
 	background: var(--font-colour);
-}
-
+} */
 
 
 .solution-card-info ul li{

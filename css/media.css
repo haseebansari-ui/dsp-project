@@ -184,22 +184,6 @@ header{
 .inner-content-about .inner-content-papra {
   margin-top: 0px;
  }
- .plat-inr-pg-img img{
-  display: none;
- }
- .plat-inr-pg-content{
-  display: block;
-  width: 100%;
-  margin: 0 auto;
-  right: 0;
-  background-color: #ffffffc4;
-  box-shadow: var(--box-shadow);
-  backdrop-filter: blur(15px);
-  -webkit-backdrop-filter: blur(15px);
- }
- .platform-content-container{
-	background-color: #0414fdb0;
-}
 }
 
 @media screen and (max-width: 767px){
@@ -520,6 +504,12 @@ header{
     top: -51px;
     right: 173px;
     font-size: 76px;
+  }
+  .solution-card-info p{
+    font-size: 14px;
+  }
+  .solution-card-info ul li{
+    font-size: 14px;
   }
 }
 
