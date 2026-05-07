@@ -185,7 +185,7 @@ header{
   margin-top: 0px;
  }
 
- /* .platform-content h2{
+ .platform-content h2{
 		font-size: 34px;
 	}
 
@@ -209,7 +209,7 @@ header{
 		transform: unset;
 		right: unset;
 		margin: auto;
-	} */
+	}
 }
 
 @media screen and (max-width: 767px){
