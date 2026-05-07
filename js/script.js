@@ -26,7 +26,8 @@ $(".services-slider").slick({
       breakpoint: 767,
       settings: {
         slidesToShow: 1,
-        slidesToScroll: 1
+        slidesToScroll: 1,
+        dots: false,
       }
     }
   ]
@@ -48,6 +49,15 @@ $(".testimonial-slider").slick({
         infinite: true,
         dots: true
       }
+    },
+    {
+      breakpoint: 676,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        infinite: true,
+        dots: false
+      }
     }
   ]
 });
@@ -67,6 +77,15 @@ $(".posts-slider").slick({
         slidesToScroll: 1,
         infinite: true,
         dots: true
+      }
+    },
+    {
+      breakpoint: 990,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        infinite: true,
+        dots: false
       }
     }
   ]
