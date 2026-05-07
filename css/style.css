@@ -2,7 +2,8 @@
 	--font-colour: #151515;
 	--hover-color: #ff8851;
 	--btn-color: #f8793e;
-	--box-shadow: 0 0 20px #0001;
+	--box-shadow: 0 0 25px rgb(8 113 250 / 22%);
+	--box-shadow2: 0 0 25px rgba(8, 113, 250, 0.541);
 }
 
 * {
@@ -544,9 +545,9 @@ header {
 	font-size: 2.5rem;
 }
 
-.side-menu-close:hover {
+/* .side-menu-close:hover {
 	color: var(--hover-color);
-}
+} */
 
 .home-logo img {
 	width: 300px;
@@ -998,7 +999,7 @@ header {
 	position: relative;
 	background-color: #fff;
 	padding: 50px 30px;
-	box-shadow: 0 0 20px rgb(8 113 250 / 41%);
+	box-shadow: var(--box-shadow);
 	border-radius: 1.5rem;
 }
 
@@ -1132,7 +1133,7 @@ header {
 	line-height: 1.6;
 }
 .features-sec .feat-card:hover{
-	box-shadow: 0 0 25px rgb(8 113 250 / 41%);
+	box-shadow: var(--box-shadow)
 }
 .icon-80 {
 	width: 80px;
@@ -1162,7 +1163,7 @@ header {
 	background-color: rgb(255, 255, 255);
 	padding: 20px;
 	border-radius: 1.5rem;
-	border: 1px solid blue;
+	border: 1px solid rgba(0, 0, 255, 0.39);
 }
 .testimonial-sec .testi-card .rate-wrapper {
 	display: flex;
@@ -1262,7 +1263,7 @@ header {
 	margin-bottom: 1.3rem;
     height: 80px;
     width: 80px;
-    box-shadow: 0 0 20px blue;
+    box-shadow: 0 0 20px rgba(0, 0, 255, 0.39);
     border-radius: 100%;
     background: #ebebeb;
     display: flex;
@@ -1303,7 +1304,7 @@ header {
 	transition: 0.5s;
 }
 .numbers-sec .numbers .number-card:hover{
-	box-shadow: 0 0 20px rgb(8 113 250 / 41%);
+	box-shadow: var(--box-shadow);
 }
 .numbers-sec .numbers .number-card p {
 	font-size: 16px;
@@ -1421,7 +1422,7 @@ header {
 }
 
 .clients-sec .cards .logo:hover{
-	box-shadow: 0 0 20px rgb(8 113 250 / 41%);
+	box-shadow: var(--box-shadow);
 }
 .clients-sec .text-capitalize{
 	text-align: center;
@@ -1594,15 +1595,21 @@ header {
 
 .accordian .contentBx .label {
 	position: relative;
-	padding: 1rem;
+	padding: 1.5rem;
 	cursor: pointer;
 	display: flex;
 	align-items: center;
 	gap: 1rem;
-	color: var(--color-black-250);
+	color: var(--font-colour);
 	font-weight: 600;
+	transition: 0.3s;
 }
 
+.accordian .contentBx.active .label {
+    color: #fff;
+    background: rgba(8, 113, 250, 0.699);
+	border-radius: 0.5rem 0.5rem 0 0;
+}
 .ques-icon {
 	display: flex;
 	justify-content: center;
@@ -1627,6 +1634,7 @@ header {
 
 .accordian .contentBx.active .label::before {
 	content: '-';
+	color: #fff;
 }
 
 .accordian .contentBx {
@@ -1643,7 +1651,11 @@ header {
 
 .accordian .contentBx.active .acc-content {
 	height: inherit;
-	padding: 0 1rem 2rem;
+	padding: 1.5rem 1rem;
+}
+
+.accordian .contentBx .acc-content p{
+	margin: 0;
 }
 
 /* -- Inner About Section -- */
@@ -1905,7 +1917,7 @@ header {
 	border: 1px solid #9993;
 }
 .about-inner-pg-client-sec .cards .logo:hover{
-	box-shadow: 0 0 15px rgb(8 113 250 / 41%);
+	box-shadow: var(--box-shadow);
 }
 .about-inner-pg-client-sec .cards .logo img{
 	width: 110px;
@@ -1969,7 +1981,7 @@ header {
 	width: 357px;
 	overflow: hidden;
 	border-radius: 1rem;
-	box-shadow: 0 0 10px rgba(8, 113, 250, 0.699);
+	box-shadow: var(--box-shadow);
 }
 
 .service-head-img img {
@@ -2182,7 +2194,7 @@ header {
 }
 
 .solution-info-sec .feat-card:hover{
-	box-shadow: 0 0 20px rgba(8, 113, 250, 0.699);
+	box-shadow: var(--box-shadow);
 }
 
 .solution-sec .btn-play.butn {
@@ -2463,29 +2475,6 @@ section {
 
 /* --- SignUp Form Section --- */
 
-/* .signup-main-container .form-img {
-	height: 100vh;
-	overflow: inherit;
-	background-image: url(../assets/signupimg1.jpg);
-	background-repeat: no-repeat;
-	background-position: 50% 50%;
-	background-size: 100% 100%;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	position: relative;
-} */
-/* .signup-main-container .form-img::before {
-	content: ' ';
-	position: absolute;
-	top: 0;
-	left: 0;
-	height: 100%;
-	width: 100%;
-	background: rgba(0, 0, 0, 0.365);
-	z-index: 2;
-} */
-
 .signup-content h6 {
 	font-size: 2.8rem;
     color: var(--font-colour);
@@ -2750,7 +2739,7 @@ section {
 }
 
 .publisher-info-sec .feat-card:hover{
-	box-shadow: 0 0 20px rgba(8, 113, 250, 0.698);
+	box-shadow: var(--box-shadow);
 	transition: 0.5s;
 }
 
@@ -2782,7 +2771,7 @@ section {
 	box-shadow: 0 0 20px rgb(8 113 250 / 41%);
 } */
 .ads-info-sec .feat-card:hover{
-	box-shadow: 0 0 20px rgb(8 113 250 / 41%);
+	box-shadow: var(--box-shadow);
 	transition: 0.5s;
 }
 
@@ -2839,7 +2828,7 @@ section {
 }
 
 .industries-sec .feat-card:hover {
-	box-shadow: 0 0 20px rgba(8, 113, 250, 0.698);;
+	box-shadow: var(--box-shadow);
 }
 
 /* -- Technologies -- */
@@ -2911,36 +2900,58 @@ section {
 .about-indx-img{
 	border-radius: 1.8rem;
 	overflow: hidden;
-	box-shadow: 0 0 30px blue;
+	box-shadow: var(--box-shadow2);
 }
 .about-indx-img img{
 	width: 100%;
 }
 
 /* --- Platform Capabilities --- */
-.connection-image-container {
+.plat-inr-pg-img {
     position: relative;
-    height: 500px;
+    height: 600px;
 }
-.connection-image-container img {
+.plat-inr-pg-img img {
     width: 700px;
-    height: 500px;
+    height: 600px;
     object-fit: cover;
 	border-radius: 1rem;
 }
 
-.connection-content {
+.plat-inr-pg-content {
     position: absolute;
     top: 50%;
-    right: 170px;
+    right: 15px;
     height: auto;
-    width: 600px;
+    width: 700px;
     background: #fff;
     padding: 1.5rem 1rem;
     transform: translateY(-50%);
 	border-radius: 1rem;
 	box-shadow: 0 0 20px rgba(8, 113, 250, 0.698);
 }
+
+.plat-inr-pg-content .heading-container h2{
+	margin-bottom: 1rem;
+}
+
+.plat-inr-pg-content ul li{
+	position: relative;
+	padding-left: 1rem;
+	margin-bottom: 0.5rem;
+	line-height: 1.6;
+}
+.plat-inr-pg-content ul li::after{
+	content: " ";
+	position: absolute;
+	top: 12px;
+    left: 0;
+    height: 2px;
+    width: 10px;
+	background: var(--font-colour);
+}
+
+
 
 .solution-card-info ul li{
 	position: relative;
