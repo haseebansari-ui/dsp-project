@@ -505,12 +505,12 @@ header{
     right: 173px;
     font-size: 76px;
   }
-  .solution-card-info p{
+  /* .solution-card-info p{
     font-size: 14px;
   }
   .solution-card-info ul li{
     font-size: 14px;
-  }
+  } */
 }
 
 @media screen and (max-width: 479px){
@@ -591,12 +591,12 @@ header{
   .about-sec.sec-padding{
     padding: 0 0 4rem;
   }
-   .solution-card-info p{
+   /* .solution-card-info p{
     font-size: 12px;
   }
   .solution-card-info ul li{
     font-size: 12px;
-  }
+  } */
 }
 
 
