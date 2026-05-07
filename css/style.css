@@ -2922,7 +2922,7 @@ section {
 
 /* --- Platform Capabilities --- */
 
-/* .platform-image{
+.platform-image{
 	width: 58%;
 	position: relative;
 	z-index: 1;
@@ -2963,7 +2963,7 @@ section {
 	font-weight: 700;
 	margin-bottom: 30px;
 	color: #111827;
-}*/
+}
 .feature-list{
 	display: flex;
 	flex-direction: column;
@@ -2975,8 +2975,8 @@ section {
 	padding-left: 28px;
 	font-size: 16px;
 	line-height: 1.7;
-	/* color: #4b5563; */
-	color: var(--font-colour);
+	color: #4b5563;
+	/* color: var(--font-colour); */
 }
 
 .feature-list li::before{
