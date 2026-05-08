@@ -1589,8 +1589,8 @@ header {
 }
 .accordian {
 	margin-bottom: 1.5rem;
-	/* max-width: 550px; */
-	margin: 0 0 1rem 0;
+	max-width: 800px;
+	margin: 0 auto 1.5rem;
 }
 
 .accordian .contentBx .label {
