@@ -11,7 +11,7 @@ $(".services-slider").slick({
   speed: 1500,
   arrows: false,
   autoplay: true,
-  dots: true,
+  dots: false,
   responsive: [
     {
       breakpoint: 990,
@@ -19,7 +19,7 @@ $(".services-slider").slick({
         slidesToShow: 2,
         slidesToScroll: 1,
         infinite: true,
-        dots: true
+        dots: false
       }
     },
     {
@@ -39,7 +39,7 @@ $(".testimonial-slider").slick({
   speed: 1500,
   autoplay: true,
   arrows: false,
-  dots: true,
+  dots: false,
   responsive: [
     {
       breakpoint: 990,
@@ -47,7 +47,7 @@ $(".testimonial-slider").slick({
         slidesToShow: 1,
         slidesToScroll: 1,
         infinite: true,
-        dots: true
+        dots: false
       }
     },
     {
@@ -68,7 +68,7 @@ $(".posts-slider").slick({
   autoplay: true,
   speed: 1500,
   arrows: false,
-  dots: true,
+  dots: false,
   responsive: [
     {
       breakpoint: 990,
@@ -76,7 +76,7 @@ $(".posts-slider").slick({
         slidesToShow: 1,
         slidesToScroll: 1,
         infinite: true,
-        dots: true
+        dots: false
       }
     },
     {

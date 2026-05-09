@@ -1,530 +1,672 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_right_alt"
+		/>
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+			crossorigin="anonymous"
+		/>
+		<link
+			rel="stylesheet"
+			type="text/css"
+			href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+		/>
+		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="css/media.css" />
+	</head>
 
-<head>
-	<meta charset="UTF-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title>Document</title>
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
-	<link
-		href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-		rel="stylesheet" />
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_right_alt" />
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-		integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-	<link rel="stylesheet" href="css/style.css" />
-	<link rel="stylesheet" href="css/media.css" />
-</head>
+	<body>
+		<header>
+			<div class="container">
+				<div class="main-header">
+					<a href="index.html" class="logo-header-in-pages"
+						><img src="./assets/new-logo-2.png" alt="Logo"
+					/></a>
+					<a href="index.html" class="scroll-logo-header"
+						><img src="./assets/new-logo-2.png" alt="Logo"
+					/></a>
+					<div class="main-navbar">
+						<ul class="navbar-nav dropdown">
+							<li><a href="index.html">Home</a></li>
+							<li><a href="about.html">About Us</a></li>
+							<li class="nav-menue dropdown-lits">
+								<a href="services.html">Services</a>
+								<ul class="dropdown-items">
+									<li class="sub-menu">
+										<a href="solution.html" class="drop-list-text list-sub-head"
+											>Solutions</a
+										>
+									</li>
+									<li>
+										<a href="platform.html" class="drop-list-text list-sub-head"
+											>Platform</a
+										>
+									</li>
+									<li>
+										<a href="advertisers.html" class="drop-list-text"
+											>Advertisers</a
+										>
+									</li>
+									<li>
+										<a href="publishers.html" class="drop-list-text"
+											>Publishers</a
+										>
+									</li>
+									<li>
+										<a
+											href="industries.html"
+											class="drop-list-text list-sub-head"
+											>Industries</a
+										>
+									</li>
+									<li>
+										<a href="#" class="drop-list-text list-sub-head"
+											>Resources</a
+										>
+										<ul class="sub-list-item resources-list">
+											<li><a href="blog.html">Blog</a></li>
+											<li><a href="faq.html">FAQs</a></li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li><a href="contact.html">Contact Us</a></li>
+							<li><a href="login.html">Login</a></li>
+							<li><a href="signup.html">Get Demo</a></li>
+						</ul>
+						<div class="menue-bar">
+							Menu
+							<div class="menue-line-bx">
+								<span class="home-menue-line"></span>
+								<span class="home-menue-line short-line"></span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
 
-<body>
-	<header>
-		<div class="container">
-			<div class="main-header">
-				<a href="index.html" class="logo-header-in-pages"><img src="./assets/new-logo-2.png" alt="Logo"></a>
-				<a href="index.html" class="scroll-logo-header"><img src="./assets/new-logo-2.png" alt="Logo"></a>
-				<div class="main-navbar">
-					<ul class="navbar-nav dropdown">
+		<!-- Services Section -->
+		<section class="service-sec pt-pb inner-about-sec">
+			<div class="container">
+				<div class="title mb-5">
+					<div class="row">
+						<div
+							class="col-lg-7 inner-about-pg-hero"
+							data-aos="fade-right"
+							data-aos-duration="1200"
+						>
+							<h2 class="fsz-50">
+								We are a digital agency <br />
+								for visually compelling <br />
+								about stories artech.
+							</h2>
+						</div>
+					</div>
+					<div class="float-txt">services</div>
+				</div>
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-3 d-none d-lg-block">
+							<div class="shap">
+								<img src="./img/tit_ico.svg" alt="" />
+							</div>
+						</div>
+						<div class="col-lg-7" data-aos="fade-up" data-aos-duration="1200">
+							<div class="text-content inner-content-about">
+								<div class="text mb-5 inner-content-papra">
+									Nunc nec semper arcu, id malesuada est. Integer sodales, magna
+									ac porta ultricies, tortor sapien malesuada dui, sit amet
+									vestibulum magna dui et odio. Donec eu urna vitae orci lacinia
+									malesuada. Duis convallis nunc mi, eu euismod velit cursus
+									vitae. Cras egestas quis dui a dignissim. Nunc ultricies mi
+									quis tristique dapibus.
+								</div>
+								<div class="service-head-img">
+									<img src="./assets/aboutusimg.jpg" alt="" />
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Services Section -->
+		<section class="srvc-inn-pg-sec features-sec sec-padding">
+			<div class="container">
+				<div class="cards">
+					<div class="row">
+						<div
+							class="col-lg-4 col-md-6 mb-5"
+							data-aos="fade-right"
+							data-aos-duration="1100"
+						>
+							<div class="feat-card mt-5 mt-lg-0">
+								<div class="icon icon-80 mb-30">
+									<img src="./assets/srvcimg1.png" alt="" />
+								</div>
+								<h6 class="fsz-24 mb-20">Programmatic Advertising</h6>
+								<p class="fsz-16 cr-777">
+									AI-led bidding strategies that predict high-value impressions
+									before they happen
+								</p>
+							</div>
+						</div>
+						<div
+							class="col-lg-4 col-md-6 mb-5"
+							data-aos="fade-right"
+							data-aos-duration="1300"
+						>
+							<div class="feat-card mt-5 mt-lg-0">
+								<div class="icon icon-80 mb-30">
+									<img src="./assets/srvcimg2.png" alt="" />
+								</div>
+								<h6 class="fsz-24 mb-20">User Acquisition</h6>
+								<p class="fsz-16 cr-777">
+									Smart audience modeling to acquire users with higher retention
+									and lifetime value.
+								</p>
+							</div>
+						</div>
+						<div
+							class="col-lg-4 col-md-6 mb-5"
+							data-aos="fade-right"
+							data-aos-duration="1500"
+						>
+							<div class="feat-card mt-5 mt-lg-0">
+								<div class="icon icon-80 mb-30">
+									<img src="./assets/srvcimg3.png" alt="" />
+								</div>
+								<h6 class="fsz-24 mb-20">Performance Marketing</h6>
+								<p class="fsz-16 cr-777">
+									Continuous optimization powered by machine learning signals —
+									maximizing ROI at scale.
+								</p>
+							</div>
+						</div>
+						<div
+							class="col-lg-4 col-md-6 mb-5"
+							data-aos="fade-right"
+							data-aos-duration="1700"
+						>
+							<div class="feat-card mt-5 mt-lg-0">
+								<div class="icon icon-80 mb-30">
+									<img src="./assets/srvcimg4.png" alt="" />
+								</div>
+								<h6 class="fsz-24 mb-20">Brand Advertising</h6>
+								<p class="fsz-16 cr-777">
+									Premium placements with intelligent contextual targeting and
+									brand-safe environments.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Services slider Section -->
+		<section class="services-sec sec-padding">
+			<div class="container">
+				<div
+					class="title text-center mb-50"
+					data-aos="fade-up"
+					data-aos-duration="1200"
+				>
+					<div class="row justify-content-center">
+						<div class="col-lg-7">
+							<h6 class="fsz-16 fw-200 mb-20">
+								<img src="./img/tit_ico.svg" alt="" class="icon" />
+								<span class="txt mx-2"> Best Of Our Special Service </span>
+								<img src="./img/tit_ico2.svg" alt="" class="icon" />
+							</h6>
+							<h2 class="fsz-50">
+								Best of our Problem Solutions For Our Special Service
+							</h2>
+						</div>
+					</div>
+				</div>
+				<div class="services-slider">
+					<div class="items">
+						<div class="service-card">
+							<div class="row">
+								<div class="col-6">
+									<div class="inf">
+										<div class="top-cont">
+											<div class="icon icon-85 mb-30">
+												<img src="./img/ser8.svg" alt="" />
+											</div>
+											<h6 class="fsz-24">Marketing Strategy</h6>
+										</div>
+										<div class="progress-content">
+											<p class="fsz-16 cr-777 mb-10">Skill 95%</p>
+											<div
+												class="progress"
+												role="progressbar"
+												aria-label="Basic example"
+												aria-valuenow="95"
+												aria-valuemin="0"
+												aria-valuemax="100"
+											>
+												<div class="progress-bar" style="width: 95%"></div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-6">
+									<div class="img">
+										<img src="./img/ser1.png" alt="" class="img-cover" />
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="items">
+						<div class="service-card">
+							<div class="row">
+								<div class="col-6">
+									<div class="inf">
+										<div class="top-cont">
+											<div class="icon icon-85 mb-30">
+												<img src="./img/ser8.svg" alt="" />
+											</div>
+											<h6 class="fsz-24">Marketing Strategy</h6>
+										</div>
+										<div class="progress-content">
+											<p class="fsz-16 cr-777 mb-10">Skill 95%</p>
+											<div
+												class="progress"
+												role="progressbar"
+												aria-label="Basic example"
+												aria-valuenow="95"
+												aria-valuemin="0"
+												aria-valuemax="100"
+											>
+												<div class="progress-bar" style="width: 95%"></div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-6">
+									<div class="img">
+										<img src="./img/ser1.png" alt="" class="img-cover" />
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="items">
+						<div class="service-card">
+							<div class="row">
+								<div class="col-6">
+									<div class="inf">
+										<div class="top-cont">
+											<div class="icon icon-85 mb-30">
+												<img src="./img/ser8.svg" alt="" />
+											</div>
+											<h6 class="fsz-24">Marketing Strategy</h6>
+										</div>
+										<div class="progress-content">
+											<p class="fsz-16 cr-777 mb-10">Skill 95%</p>
+											<div
+												class="progress"
+												role="progressbar"
+												aria-label="Basic example"
+												aria-valuenow="95"
+												aria-valuemin="0"
+												aria-valuemax="100"
+											>
+												<div class="progress-bar" style="width: 95%"></div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-6">
+									<div class="img">
+										<img src="./img/ser1.png" alt="" class="img-cover" />
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="items">
+						<div class="service-card">
+							<div class="row">
+								<div class="col-6">
+									<div class="inf">
+										<div class="top-cont">
+											<div class="icon icon-85 mb-30">
+												<img src="./img/ser8.svg" alt="" />
+											</div>
+											<h6 class="fsz-24">Marketing Strategy</h6>
+										</div>
+										<div class="progress-content">
+											<p class="fsz-16 cr-777 mb-10">Skill 95%</p>
+											<div
+												class="progress"
+												role="progressbar"
+												aria-label="Basic example"
+												aria-valuenow="95"
+												aria-valuemin="0"
+												aria-valuemax="100"
+											>
+												<div class="progress-bar" style="width: 95%"></div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-6">
+									<div class="img">
+										<img src="./img/ser1.png" alt="" class="img-cover" />
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="items">
+						<div class="service-card">
+							<div class="row">
+								<div class="col-6">
+									<div class="inf">
+										<div class="top-cont">
+											<div class="icon icon-85 mb-30">
+												<img src="./img/ser8.svg" alt="" />
+											</div>
+											<h6 class="fsz-24">Marketing Strategy</h6>
+										</div>
+										<div class="progress-content">
+											<p class="fsz-16 cr-777 mb-10">Skill 95%</p>
+											<div
+												class="progress"
+												role="progressbar"
+												aria-label="Basic example"
+												aria-valuenow="95"
+												aria-valuemin="0"
+												aria-valuemax="100"
+											>
+												<div class="progress-bar" style="width: 95%"></div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-6">
+									<div class="img">
+										<img src="./img/ser1.png" alt="" class="img-cover" />
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="items">
+						<div class="service-card">
+							<div class="row">
+								<div class="col-6">
+									<div class="inf">
+										<div class="top-cont">
+											<div class="icon icon-85 mb-30">
+												<img src="./img/ser8.svg" alt="" />
+											</div>
+											<h6 class="fsz-24">Marketing Strategy</h6>
+										</div>
+										<div class="progress-content">
+											<p class="fsz-16 cr-777 mb-10">Skill 95%</p>
+											<div
+												class="progress"
+												role="progressbar"
+												aria-label="Basic example"
+												aria-valuenow="95"
+												aria-valuemin="0"
+												aria-valuemax="100"
+											>
+												<div class="progress-bar" style="width: 95%"></div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-6">
+									<div class="img">
+										<img src="./img/ser1.png" alt="" class="img-cover" />
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="items">
+						<div class="service-card">
+							<div class="row">
+								<div class="col-6">
+									<div class="inf">
+										<div class="top-cont">
+											<div class="icon icon-85 mb-30">
+												<img src="./img/ser8.svg" alt="" />
+											</div>
+											<h6 class="fsz-24">Marketing Strategy</h6>
+										</div>
+										<div class="progress-content">
+											<p class="fsz-16 cr-777 mb-10">Skill 95%</p>
+											<div
+												class="progress"
+												role="progressbar"
+												aria-label="Basic example"
+												aria-valuenow="95"
+												aria-valuemin="0"
+												aria-valuemax="100"
+											>
+												<div class="progress-bar" style="width: 95%"></div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-6">
+									<div class="img">
+										<img src="./img/ser1.png" alt="" class="img-cover" />
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Vision Section -->
+		<section class="vision-sec sec-padding">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-9">
+						<div class="main-text pe-lg-5">
+							Our goal is making your working process faster and easier. Thats
+							<br />
+							why we’ve added tons of flexible options with exclusive functions.
+						</div>
+					</div>
+					<div class="col-lg-6 ms-auto">
+						<div class="text fsz-16 cr-777 mt-10">
+							Donec et luctus nisi. Duis posuere dolor ac augue porta
+							pellentesque. Nunc lacinia lorem eu nulla aliquam ullamcorper. Ut
+							diam nisi, interdum nec orci nec, feugiat interdum magna. Nulla
+							pulvinar lectus vel fringilla porttitor. Morbi pharetra pulvinar
+							lacus, quis laoreet ex imperdiet id. Mauris et posuere lacus, at
+							imperdiet velit.
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Footer Section -->
+		<footer class="footer-sec">
+			<div class="container">
+				<div class="links-wrapper">
+					<div class="row">
+						<div class="col-lg-5">
+							<a href="index.html" class="logo-footer">
+								<img src="./assets/new-logo-2.png" alt="" />
+							</a>
+						</div>
+						<div class="col-lg-2 offset-lg-2">
+							<div class="links-group mt-5 mt-lg-0">
+								<h6 class="fsz-18 mb-4">More Service</h6>
+								<ul class="links">
+									<li><a href="about.html"> About us </a></li>
+									<li><a href="privacy.html"> Privacy Policy </a></li>
+									<li><a href="contact.html"> Contact us </a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-lg-3">
+							<div class="links-group mt-5 mt-lg-0">
+								<h6 class="fsz-18 mb-4">Address</h6>
+								<ul class="links">
+									<li>
+										<a href="#">
+											785 15h Street - Sydney Harbor <br />
+											Bridge Circular City of Sydney,
+										</a>
+									</li>
+									<li><a href="#" class="opacity-100"> #India. </a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="foot">
+				<div class="container">
+					<div class="row align-items-center">
+						<div class="col-lg-7">
+							<p>
+								Built on intelligence. Driven by performance © Powered by
+								<a href="#" class="cr-dark1"> Havmor Media </a>
+							</p>
+						</div>
+						<div class="col-lg-5">
+							<div class="foot-links text-lg-end mt-5 mt-lg-0">
+								<a href="faq.html"> FAQ's </a>
+								<a href="contact.html"> Contact Us </a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- <img src="./img/foot_shapes.png" alt="" class="foot-shapes"> -->
+		</footer>
+
+		<!-- Side Menu -->
+		<div class="side-manue">
+			<div class="side-menue-grid">
+				<div class="side-menu-close">
+					<span><i class="fa-solid fa-xmark"></i></span>
+				</div>
+				<div class="home-menue-bar">
+					<ul>
 						<li><a href="index.html">Home</a></li>
 						<li><a href="about.html">About Us</a></li>
-						<li class="nav-menue dropdown-lits">
-							<a href="services.html">Services</a>
-							<ul class="dropdown-items">
-								<li class="sub-menu">
-									<a href="solution.html" class="drop-list-text list-sub-head">Solutions</a>
-								</li>
+						<li>
+							<div class="srvc-content-bx mobile-menue-list-bx">
+								Services
+								<span class="plus-srvc"><i class="fa-solid fa-plus"></i></span>
+								<span class="minus-srvc"
+									><i class="fa-solid fa-minus"></i
+								></span>
+							</div>
+							<ul class="mobile-menue-list">
+								<li><a href="solution.html">Solutions</a></li>
+								<li><a href="platform.html">Platform</a></li>
+								<li><a href="advertisment.html">Advertisers</a></li>
+								<li><a href="publishers.html">Publishers</a></li>
+								<li><a href="industries.html">Industries</a></li>
 								<li>
-									<a href="platform.html" class="drop-list-text list-sub-head">Platform</a>
-								</li>
-								<li><a href="advertisers.html" class="drop-list-text">Advertisers</a></li>
-								<li><a href="publishers.html" class="drop-list-text">Publishers</a></li>
-								<li>
-									<a href="industries.html" class="drop-list-text list-sub-head">Industries</a>
-								</li>
-								<li>
-									<a href="#" class="drop-list-text list-sub-head">Resources</a>
-									<ul class="sub-list-item resources-list">
-										<li><a href="blog.html">Blog</a></li>
+									<div class="resources-content-bx resources-sub-menue-list">
+										Resources
+										<span class="resources-plus-srvc"
+											><i class="fa-solid fa-plus"></i
+										></span>
+										<span class="resources-minus-srvc"
+											><i class="fa-solid fa-minus"></i
+										></span>
+									</div>
+									<ul class="resources-sub-menue-points">
+										<li><a href="blogs">Blogs</a></li>
 										<li><a href="faq.html">FAQs</a></li>
 									</ul>
 								</li>
 							</ul>
 						</li>
-						<li><a href="contact.html">Contact Us</a></li>
-						<li><a href="login.html">Login</a></li>
-						<li><a href="signup.html">Get Demo</a></li>
+						<li><a href="blog.html">Blog</a></li>
+						<li><a href="contact.html">Contact</a></li>
 					</ul>
-					<div class="menue-bar">
-						Menu
-					<div class="menue-line-bx">
-						<span class="home-menue-line"></span>
-						<span class="home-menue-line short-line"></span>
-					</div>
 				</div>
-				</div>
-			</div>
-		</div>
-	</header>
-	
-    <!-- Services Section -->
-	<section class="service-sec pt-pb inner-about-sec">
-		<div class="container">
-			<div class="title mb-5">
-				<div class="row">
-					<div class="col-lg-7 inner-about-pg-hero" data-aos="fade-right" data-aos-duration="1200">
-						<h2 class="fsz-50"> We are a digital agency <br> for visually compelling <br> about stories artech. </h2>
-					</div>
-				</div>
-				<div class="float-txt"> services </div>
-			</div>
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-3 d-none d-lg-block">
-						<div class="shap">
-                            <img src="./img/tit_ico.svg" alt="">
-                         </div>
-					</div>
-					<div class="col-lg-7" data-aos="fade-up" data-aos-duration="1200">
-						<div class="text-content inner-content-about">
-							<div class="text mb-5 inner-content-papra">Nunc nec semper arcu, id malesuada est. Integer sodales, magna ac porta ultricies, tortor sapien malesuada dui, sit amet vestibulum magna dui et odio. Donec eu urna vitae orci lacinia malesuada. Duis convallis nunc mi, eu euismod velit cursus vitae. Cras egestas quis dui a dignissim. Nunc ultricies mi quis tristique dapibus. 
-                            </div>
-                            <div class="service-head-img">
-                                <img src="./assets/aboutusimg.jpg" alt="">
-                            </div>						
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-
-     <!-- Services Section -->
-    <section class=" srvc-inn-pg-sec features-sec sec-padding">
-		<div class="container">
-			<div class="cards">
-				<div class="row">
-					<div class="col-lg-4 col-md-6 mb-5 " data-aos="fade-right" data-aos-duration="1100">
-						<div class="feat-card mt-5 mt-lg-0">
-							<div class="icon icon-80 mb-30">
-								<img src="./assets/srvcimg1.png" alt="">
-							</div>
-							<h6 class="fsz-24 mb-20"> Programmatic Advertising </h6>
-							<p class="fsz-16 cr-777"> AI-led bidding strategies that predict high-value impressions before they happen </p>
-						</div>
-					</div>
-					<div class="col-lg-4 col-md-6 mb-5" data-aos="fade-right" data-aos-duration="1300">
-						<div class="feat-card mt-5 mt-lg-0">
-							<div class="icon icon-80 mb-30">
-								<img src="./assets/srvcimg2.png" alt="">
-							</div>
-							<h6 class="fsz-24 mb-20"> User Acquisition </h6>
-							<p class="fsz-16 cr-777"> Smart audience modeling to acquire users with higher retention and lifetime value. </p>
-						</div>
-					</div>
-					<div class="col-lg-4 col-md-6 mb-5" data-aos="fade-right" data-aos-duration="1500">
-						<div class="feat-card mt-5 mt-lg-0">
-							<div class="icon icon-80 mb-30">
-								<img src="./assets/srvcimg3.png" alt="">
-							</div>
-							<h6 class="fsz-24 mb-20"> Performance Marketing </h6>
-							<p class="fsz-16 cr-777"> Continuous optimization powered by machine learning signals — maximizing ROI at scale. </p>
-						</div>
-					</div>
-					<div class="col-lg-4 col-md-6 mb-5" data-aos="fade-right" data-aos-duration="1700">
-						<div class="feat-card mt-5 mt-lg-0">
-							<div class="icon icon-80 mb-30">
-								<img src="./assets/srvcimg4.png" alt="">
-							</div>
-							<h6 class="fsz-24 mb-20"> Brand Advertising </h6>
-							<p class="fsz-16 cr-777"> Premium placements with intelligent contextual targeting and brand-safe environments. </p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-
-    <!-- Services slider Section -->
-	<section class="services-sec sec-padding">
-		<div class="container">
-			<div class="title text-center mb-50" data-aos="fade-up" data-aos-duration="1200">
-				<div class="row justify-content-center">
-					<div class="col-lg-7">
-						<h6 class="fsz-16 fw-200 mb-20"> <img src="./img/tit_ico.svg" alt="" class="icon">
-							<span class="txt mx-2"> Best Of Our Special Service </span> <img src="./img/tit_ico2.svg"
-								alt="" class="icon">
-						</h6>
-						<h2 class="fsz-50"> Best of our Problem Solutions For Our Special Service </h2>
-					</div>
-				</div>
-			</div>
-			<div class="services-slider">
-				<div class="items">
-					<div class="service-card">
-						<div class="row">
-							<div class="col-6">
-								<div class="inf">
-									<div class="top-cont">
-										<div class="icon icon-85 mb-30">
-											<img src="./img/ser8.svg" alt="">
-										</div>
-										<h6 class="fsz-24"> Marketing Strategy </h6>
-									</div>
-									<div class="progress-content">
-										<p class="fsz-16 cr-777 mb-10"> Skill 95% </p>
-										<div class="progress" role="progressbar" aria-label="Basic example"
-											aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">
-											<div class="progress-bar" style="width: 95%"></div>
-										</div>
-									</div>
+				<div class="home-contact-info">
+					<ul>
+						<li>
+							<a href="index.html">
+								<div class="home-logo">
+									<img src="./assets/new-logo-2.png" alt="" />
 								</div>
-							</div>
-							<div class="col-6">
-								<div class="img">
-									<img src="./img/ser1.png" alt="" class="img-cover">
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="items">
-					<div class="service-card">
-						<div class="row">
-							<div class="col-6">
-								<div class="inf">
-									<div class="top-cont">
-										<div class="icon icon-85 mb-30">
-											<img src="./img/ser8.svg" alt="">
-										</div>
-										<h6 class="fsz-24"> Marketing Strategy </h6>
-									</div>
-									<div class="progress-content">
-										<p class="fsz-16 cr-777 mb-10"> Skill 95% </p>
-										<div class="progress" role="progressbar" aria-label="Basic example"
-											aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">
-											<div class="progress-bar" style="width: 95%"></div>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-6">
-								<div class="img">
-									<img src="./img/ser1.png" alt="" class="img-cover">
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="items">
-					<div class="service-card">
-						<div class="row">
-							<div class="col-6">
-								<div class="inf">
-									<div class="top-cont">
-										<div class="icon icon-85 mb-30">
-											<img src="./img/ser8.svg" alt="">
-										</div>
-										<h6 class="fsz-24"> Marketing Strategy </h6>
-									</div>
-									<div class="progress-content">
-										<p class="fsz-16 cr-777 mb-10"> Skill 95% </p>
-										<div class="progress" role="progressbar" aria-label="Basic example"
-											aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">
-											<div class="progress-bar" style="width: 95%"></div>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-6">
-								<div class="img">
-									<img src="./img/ser1.png" alt="" class="img-cover">
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="items">
-					<div class="service-card">
-						<div class="row">
-							<div class="col-6">
-								<div class="inf">
-									<div class="top-cont">
-										<div class="icon icon-85 mb-30">
-											<img src="./img/ser8.svg" alt="">
-										</div>
-										<h6 class="fsz-24"> Marketing Strategy </h6>
-									</div>
-									<div class="progress-content">
-										<p class="fsz-16 cr-777 mb-10"> Skill 95% </p>
-										<div class="progress" role="progressbar" aria-label="Basic example"
-											aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">
-											<div class="progress-bar" style="width: 95%"></div>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-6">
-								<div class="img">
-									<img src="./img/ser1.png" alt="" class="img-cover">
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="items">
-					<div class="service-card">
-						<div class="row">
-							<div class="col-6">
-								<div class="inf">
-									<div class="top-cont">
-										<div class="icon icon-85 mb-30">
-											<img src="./img/ser8.svg" alt="">
-										</div>
-										<h6 class="fsz-24"> Marketing Strategy </h6>
-									</div>
-									<div class="progress-content">
-										<p class="fsz-16 cr-777 mb-10"> Skill 95% </p>
-										<div class="progress" role="progressbar" aria-label="Basic example"
-											aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">
-											<div class="progress-bar" style="width: 95%"></div>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-6">
-								<div class="img">
-									<img src="./img/ser1.png" alt="" class="img-cover">
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="items">
-					<div class="service-card">
-						<div class="row">
-							<div class="col-6">
-								<div class="inf">
-									<div class="top-cont">
-										<div class="icon icon-85 mb-30">
-											<img src="./img/ser8.svg" alt="">
-										</div>
-										<h6 class="fsz-24"> Marketing Strategy </h6>
-									</div>
-									<div class="progress-content">
-										<p class="fsz-16 cr-777 mb-10"> Skill 95% </p>
-										<div class="progress" role="progressbar" aria-label="Basic example"
-											aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">
-											<div class="progress-bar" style="width: 95%"></div>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-6">
-								<div class="img">
-									<img src="./img/ser1.png" alt="" class="img-cover">
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="items">
-					<div class="service-card">
-						<div class="row">
-							<div class="col-6">
-								<div class="inf">
-									<div class="top-cont">
-										<div class="icon icon-85 mb-30">
-											<img src="./img/ser8.svg" alt="">
-										</div>
-										<h6 class="fsz-24"> Marketing Strategy </h6>
-									</div>
-									<div class="progress-content">
-										<p class="fsz-16 cr-777 mb-10"> Skill 95% </p>
-										<div class="progress" role="progressbar" aria-label="Basic example"
-											aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">
-											<div class="progress-bar" style="width: 95%"></div>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-6">
-								<div class="img">
-									<img src="./img/ser1.png" alt="" class="img-cover">
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-
-    <!-- Vision Section -->
-    <section class="vision-sec sec-padding">
-        <div class="container">
-                    <div class="row">
-                        <div class="col-lg-9">
-                            <div class="main-text pe-lg-5"> Our goal is making your working process faster and easier. Thats <br> why we’ve added tons of flexible options with exclusive functions. </div>
-                        </div>
-                        <div class="col-lg-6 ms-auto">
-                            <div class="text fsz-16 cr-777 mt-10"> Donec et luctus nisi. Duis posuere dolor ac augue porta pellentesque. Nunc lacinia lorem eu nulla aliquam ullamcorper. Ut diam nisi, interdum nec orci nec, feugiat interdum magna. Nulla pulvinar lectus vel fringilla porttitor. Morbi pharetra pulvinar lacus, quis laoreet ex imperdiet id. Mauris et posuere lacus, at imperdiet velit. </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-lg-6 tc-goals-st1">
-                            <h2> Adstatix </h2>
-                        </div>
-                        <!-- <div class="col-lg-6">
-                           <div class="about-pg-rotate-box">
-                                <a href="#" class="rotate-box">
-                                    <div class="rotate-circle rotate-text">
-                                        <svg class="textcircle" viewBox="0 0 500 500">
-                                            <defs>
-                                                <path id="textcircle" d="M250,400 a150,150 0 0,1 0,-300a150,150 0 0,1 0,300Z">
-                                                </path>
-                                            </defs>
-                                            <text>
-                                                <textPath xlink:href="#textcircle" textLength="900"> the creative proccess
-                                                    artechwatch </textPath>
-                                            </text>
-                                        </svg>
-                                    </div>
-                                    <img src="./img/play_icon.svg" alt="" class="icon">
-						        </a>
-                            </div>
-                        </div> -->
-                    </div>
-                </div>
-    </section>
-
-	<!-- Footer Section -->
-	<footer class="footer-sec">
-		<div class="container">
-			<div class="links-wrapper">
-				<div class="row">
-					<div class="col-lg-5">
-						<a href="index.html" class="logo-footer"> <img src="./assets/new-logo-2.png" alt=""> </a>
-					</div>
-					<div class="col-lg-2 offset-lg-2">
-						<div class="links-group mt-5 mt-lg-0">
-							<h6 class="fsz-18 mb-4"> More Service </h6>
-							<ul class="links">
-								<li> <a href="about.html"> About us </a> </li>
-								<li> <a href="privacy.html"> Privacy Policy </a> </li>
-								<li> <a href="contact.html"> Contact us </a> </li>
-							</ul>
-						</div>
-					</div>
-					<div class="col-lg-3">
-						<div class="links-group mt-5 mt-lg-0">
-							<h6 class="fsz-18 mb-4"> Address </h6>
-							<ul class="links">
-								<li> <a href="#"> 785 15h Street - Sydney Harbor <br> Bridge Circular City of Sydney,
-									</a> </li>
-								<li> <a href="#" class="opacity-100"> #India. </a> </li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="foot">
-			<div class="container">
-				<div class="row align-items-center">
-					<div class="col-lg-7">
-						<p> Built on intelligence. Driven by performance © Powered by <a href="#" class="cr-dark1"> Havmor Media </a>    </p>
-					</div>
-					<div class="col-lg-5">
-						<div class="foot-links text-lg-end mt-5 mt-lg-0">
-							<a href="faq.html"> FAQ's </a>
-							<a href="contact.html"> Contact Us </a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!-- <img src="./img/foot_shapes.png" alt="" class="foot-shapes"> -->
-	</footer>
-	
-	<!-- Side Menu -->
-	<div class="side-manue">
-		<div class="side-menue-grid">
-			<div class="side-menu-close">
-				<span><i class="fa-solid fa-xmark"></i></span>
-			</div>
-			<div class="home-menue-bar">
-				<ul>
-					<li><a href="index.html">Home</a></li>
-					<li><a href="about.html">About Us</a></li>
-					<li>
-						<div class="srvc-content-bx mobile-menue-list-bx">Services 
-							<span class="plus-srvc"><i class="fa-solid fa-plus"></i></span>
-							<span class="minus-srvc"><i class="fa-solid fa-minus"></i></span>
-						</div>
-						<ul class="mobile-menue-list">
-							<li><a href="solution.html">Solutions</a></li>
-							<li><a href="platform.html">Platform</a></li>
-							<li><a href="advertisment.html">Advertisers</a></li>
-							<li><a href="publishers.html">Publishers</a></li>
-							<li><a href="industries.html">Industries</a></li>
-							<li>
-								<div class="resources-content-bx resources-sub-menue-list">Resources
-									<span class="resources-plus-srvc"><i class="fa-solid fa-plus"></i></span>
-									<span class="resources-minus-srvc"><i class="fa-solid fa-minus"></i></span>
-								</div>
-								<ul class="resources-sub-menue-points">
-									<li><a href="blogs">Blogs</a></li>
-									<li><a href="faq.html">FAQs</a></li>
-								</ul>
-							</li>
-						</ul>
-					</li>
-					<li><a href="blog.html">Blog</a></li>
-					<li><a href="contact.html">Contact</a></li>
-				</ul>
-			</div>
-			<div class="home-contact-info">
-				<ul>
-					<li>
-						<a href="index.html">
-							<div class="home-logo">
-								<img src="./assets/new-logo-2.png" alt="">
-							</div>
-						</a>
-					</li>
-					<li>
-						<div class="side-menue-social-link">
-							<a href="#"><span><i class="fa-brands fa-facebook-f"></i></span></a>
-							<a href="#"><span><i class="fa-brands fa-twitter"></i></span></a>
-							<a href="#"><span><i class="fa-brands fa-linkedin-in"></i></span></a>
-							<a href="#"><span><i class="fa-brands fa-instagram"></i></span></a>
-						</div>
-					</li>
-					<li>
-						<div class="side-menue-contact-info-bx">
-							<a href="#" class="side-menue-contact-info side-menue-info">
-								<span><i class="fa-solid fa-phone-volume"></i></span>
-								<span>+00 123 456 7897</span>
 							</a>
-							<a href="#" class="side-menue-mail-info side-menue-info">
-								<span><i class="fa-regular fa-envelope"></i></span>
-								<span>info@artech.com</span>
-							</a>	
-						</div>
-					</li>
-				</ul>
+						</li>
+						<li>
+							<div class="side-menue-social-link">
+								<a href="#"
+									><span><i class="fa-brands fa-facebook-f"></i></span
+								></a>
+								<a href="#"
+									><span><i class="fa-brands fa-twitter"></i></span
+								></a>
+								<a href="#"
+									><span><i class="fa-brands fa-linkedin-in"></i></span
+								></a>
+								<a href="#"
+									><span><i class="fa-brands fa-instagram"></i></span
+								></a>
+							</div>
+						</li>
+						<li>
+							<div class="side-menue-contact-info-bx">
+								<a href="#" class="side-menue-contact-info side-menue-info">
+									<span><i class="fa-solid fa-phone-volume"></i></span>
+									<span>+00 123 456 7897</span>
+								</a>
+								<a href="#" class="side-menue-mail-info side-menue-info">
+									<span><i class="fa-regular fa-envelope"></i></span>
+									<span>info@artech.com</span>
+								</a>
+							</div>
+						</li>
+					</ul>
+				</div>
 			</div>
 		</div>
-	</div>
 
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-	<script src="js/script.js"></script>
-
-
-</body>
-
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+		<script
+			type="text/javascript"
+			src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+		></script>
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+		<script src="js/script.js"></script>
+	</body>
 </html>
