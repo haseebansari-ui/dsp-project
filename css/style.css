@@ -202,7 +202,7 @@ header {
 	background-color: rgba(8, 113, 250, 0.699);
 }
 .h-scroll .navbar-nav li ul li .drop-list-text:hover {
-	color: var(--font-colour);
+	color: #fff;
 	background: rgba(8, 113, 250, 0.699);
 }
 .navbar-nav li ul li .drop-list-text:hover {
@@ -229,7 +229,7 @@ header {
 
 .h-scroll .navbar-nav li ul li ul li a:hover {
 	background-color: rgba(8, 113, 250, 0.699);
-	color: var(--font-colour);
+	color: #fff;
 }
 
 .navbar-nav li ul .sub-menu {
@@ -960,6 +960,7 @@ header {
 	margin-bottom: 10px;
 }
 .footer-sec .links-group .links a:hover {
+	color: #0059ff;
 	opacity: 1;
 }
 .footer-sec .foot {
